@@ -1,0 +1,20 @@
+<header>
+    <div class="logo"><span>xxx</span></div>
+</header>
+<main>
+    <div class="login  center-block">
+        <h3>Login SonicWall</h3>
+        <form role="form">
+            <div class="form-group row">
+                <label for="username">Username</label>
+                <input type="text" #username id="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" #password id="password" placeholder="Password">
+            </div>
+            <button type="button" class="btn btn-primary" (click)="onSubmit($event, username.value, password.value)">Submit</button>
+        </form>
+    </div>
+</main>
+<footer></footer>

@@ -1,0 +1,6 @@
+wwwroot/*.js
+node_modules
+typings
+
+public/
+node_modules/

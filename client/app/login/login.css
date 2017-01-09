@@ -1,0 +1,31 @@
+header {
+    height: 82px;
+    min-width: 980px;
+    background-color: #4267b2;
+}
+header .logo {
+    color: white;
+    font-size: 35px;
+    line-height: 1.43;
+    position: relative;
+    margin-left: 400px;
+}
+
+header .logo span{
+    position: absolute;
+    margin-top: 30px;
+}
+
+main{
+    background-color: #e9ebee;
+    padding: 80px 0;
+    text-align: center;
+
+}
+main .login{
+    width: 396px;
+    box-sizing: content-box;
+    background-color: white;
+    margin:auto;
+    padding: 22px 108px 26px;
+}
