@@ -1,21 +1,26 @@
 <html>
+
 <head>
     <title>Angular QuickStart</title>
-    <base  href="/"/>
+    <base href="/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- 1. Load libraries -->
     <!-- Polyfill(s) for older browsers -->
     <script src="./dist/polyfills.js"></script>
-    <!-- 2. Configure SystemJS -->
+    <!-- 2. Configure main -->
     <script src="./dist/main.js"></script>
     <script>
-        System.import('app').catch(function(err){ console.error(err); });
+        System.import('app').catch(function(err) {
+            console.error(err);
+        });
     </script>
 </head>
 <!-- 3. Display the application -->
+
 <body>
-<my-app>Loading...</my-app>
+    <my-app>Loading...</my-app>
 </body>
+
 </html>
