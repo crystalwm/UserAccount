@@ -1,6 +1,6 @@
   const webpack = require('webpack');
   const WebpackDevServer = require("webpack-dev-server");
-  const config = require('./webpack.config.babel');
+  const config = require('./webpack.config.babel.js');
 
   const compiler = webpack(config);
 
@@ -14,7 +14,7 @@
   });
 
 
-  /*
+
     var server = new WebpackDevServer(compiler, {
         hot: true,
         quiet: true,
@@ -30,4 +30,3 @@
 
     // Webpack dev server
     server.listen(4005)
-    */

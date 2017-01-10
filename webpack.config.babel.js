@@ -1,4 +1,5 @@
-import path from 'path';
+//import path from 'path';
+var path=require('path');
 
 module.exports = {
     entry: {
@@ -18,7 +19,7 @@ module.exports = {
         loaders: [{
             test: /\.js$/,
             exclude: ['node_modules'],
-            loader: 'babel',
+            loader: 'babel-loader',
             query: {
                 babelrc: false,
                 presets: [
@@ -26,5 +27,8 @@ module.exports = {
                 ],
             },
         }]
-    }
+    },
+    node: {
+      fs: "empty"
+   }
 }
