@@ -1,6 +1,4 @@
-var User = (function () {
-    function User() {
-    }
-    return User;
-}());
-exports.User = User;
+export class User {
+  name: string;
+  password: string;
+}

@@ -9,13 +9,9 @@
     <!-- 1. Load libraries -->
     <!-- Polyfill(s) for older browsers -->
     <script src="./dist/polyfills.js"></script>
+    <script src="./dist/vender.js"></script>
     <!-- 2. Configure main -->
-    <script src="./dist/main.js"></script>
-    <script>
-        System.import('app').catch(function(err) {
-            console.error(err);
-        });
-    </script>
+    <script src="./dist/app.js"></script>
 </head>
 <!-- 3. Display the application -->
 
