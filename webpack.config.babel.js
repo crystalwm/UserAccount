@@ -1,63 +1,66 @@
 //import path from 'path';
-var path=require('path');
+//var path = require('path');
+var helpers = require('./helpers');
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    devtool: 'cheap-module-eval-source-map',
     entry: {
-        polyfills: [
-            path.resolve(__dirname, 'node_modules/core-js/client/shim.min.js'),
-            path.resolve(__dirname, 'node_modules/zone.js/dist/zone.js'),
-            path.resolve(__dirname, 'node_modules/reflect-metadata/Reflect.js'),
-            path.resolve(__dirname, 'node_modules/systemjs/dist/system.src.js')
-        ],
-        vender:['./client/app/vender.ts'],
-        app:['./client/app/main.ts']
+        'polyfills': './client/app/polyfills.ts',
+        'vendor': './client/app/vendor.ts',
+        'app': './client/app/main.ts'
     },
 
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: helpers.root('typescript-angular2-client', 'dist'),
         filename: '[name].js'
     },
     resolve: {
-      modules: [path.resolve(__dirname, "src"), "node_modules"],
-      extensions: ['.ts', '.js']
+        //   modules: [path.resolve(__dirname, "client"), "node_modules"],
+        extensions: ['', '.ts', '.js']
     },
     module: {
-        loaders: [{
-            test: /\.js$/,
-            exclude: ['node_modules'],
-            loader: 'babel-loader',
-            query: {
-                babelrc: false,
-                presets: [
-                    ['es2015', { modules: false }],
-                ],
+        loaders: [
+            /*
+            {
+                test: /\.js$/,
+                exclude: ['node_modules'],
+                loader: 'babel-loader',
+                query: {
+                    babelrc: false,
+                    presets: [
+                        ['es2015', { modules: false }],
+                    ],
+                },
             },
-        },
-           {
-        test: /\.ts$/,
-        loaders: ['awesome-typescript-loader', 'angular2-template-loader']
-      },
-        {
-       test: /\.html$/,
-          use: [{
-            loader: 'raw-loader',
-          }],
-          include: [path.resolve(__dirname, 'client', 'app')]
+            */
+            {
+                test: /\.ts$/,
+                loaders: ['awesome-typescript-loader', 'angular2-template-loader']
+            },
+            {
+                test: /\.html$/,
+                loader: 'html'
+            },
+            {
+                test: /\.css$/,
+                include: helpers.root('client', 'app'),
+                loader: 'raw'
+            }
 
-      },
-     {
-          test: /\.css$/, 
-          use: [{
-            loader: 'to-string-loader'
-          }, {
-            loader: 'css-loader'
-          }],
-          include: path.resolve(__dirname, 'client', 'app')
-        }
- 
         ]
     },
     node: {
-      fs: "empty"
-   }
+        fs: "empty"
+    },
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: ['app', 'vendor', 'polyfills']
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        })
+    ]
 }

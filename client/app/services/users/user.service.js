@@ -12,8 +12,9 @@ var core_1 = require('@angular/core');
 var mock_users_1 = require('./mock-users');
 var logger_service_1 = require('../logger/logger.service');
 require('rxjs/add/observable/of');
-require('rxjs/add/operator/add');
+require('rxjs/add/operator/do');
 require('rxjs/add/operator/delay');
+var Observable_1 = require('rxjs/Observable');
 var UserService = (function () {
     function UserService(logger) {
         this.logger = logger;
@@ -21,7 +22,9 @@ var UserService = (function () {
     }
     UserService.prototype.isUserReg = function (name, password) {
         this.logger.log("checking weather the user has registered:" + name);
-        return mock_users_1.USERS.some(function (user) { return user.name == name && user.password == password; });
+        return Observable_1.Observable.of(true).delay(1000).do(function () {
+            return mock_users_1.USERS.some(function (user) { return user.name == name && user.password == password; });
+        });
     };
     UserService = __decorate([
         core_1.Injectable(), 

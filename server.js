@@ -14,19 +14,20 @@
   });
 
 
+  /*
+      var server = new WebpackDevServer(compiler, {
+          hot: true,
+          quiet: true,
+          noInfo: false,
+          stats: { colors: true },
+          historyApiFallback: true,
+          clientLogLevel: "warning",
+          watchOptions: {
+              aggregateTimeout: 300,
+              poll: 1000
+          }
+      });
 
-    var server = new WebpackDevServer(compiler, {
-        hot: true,
-        quiet: true,
-        noInfo: false,
-        stats: { colors: true },
-        historyApiFallback: true,
-        clientLogLevel: "warning",
-        watchOptions: {
-            aggregateTimeout: 300,
-            poll: 1000
-        }
-    });
-
-    // Webpack dev server
-    server.listen(4005)
+      // Webpack dev server
+      server.listen(4005)
+      */

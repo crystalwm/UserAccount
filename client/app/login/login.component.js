@@ -14,13 +14,16 @@ var user_service_1 = require('../services/users/user.service');
 var LoginComponent = (function () {
     function LoginComponent(userService, router) {
         this.onSubmit = function ($event, username, password) {
-            var isUserReg = this.userService.isUserReg(username, password);
-            if (isUserReg) {
-                this.router.navigate(['/admin']);
-            }
-            else {
-                window.location.reload();
-            }
+            var _this = this;
+            this.userService.isUserReg(username, password)
+                .subscribe(function (isReg) {
+                if (isReg) {
+                    _this.router.navigate(['/admin']);
+                }
+                else {
+                    window.location.reload();
+                }
+            });
         };
         this.userService = userService;
         this.router = router;
@@ -30,7 +33,7 @@ var LoginComponent = (function () {
             moduleId: module.id,
             selector: 'login',
             templateUrl: './login.html',
-            styleUrls: ['./login.css'],
+            //  styleUrls: ['./login.css'],
             providers: [user_service_1.UserService]
         }), 
         __metadata('design:paramtypes', [user_service_1.UserService, router_1.Router])

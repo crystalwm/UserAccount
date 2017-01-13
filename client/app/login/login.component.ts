@@ -7,7 +7,7 @@ import {UserService} from '../services/users/user.service';
     moduleId: module.id,
     selector: 'login',
     templateUrl: './login.html',
-    styleUrls: ['./login.css'],
+  //  styleUrls: ['./login.css'],
     providers:[UserService]
 })
 export class LoginComponent {
