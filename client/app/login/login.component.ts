@@ -4,10 +4,10 @@ import {UserService} from '../services/users/user.service';
 
 
 @Component({
-    moduleId: module.id,
+  //  moduleId: module.id,
     selector: 'login',
-    templateUrl: './login.html',
-  //  styleUrls: ['./login.css'],
+    template: require('./login.html'),
+    styles: [require('./login.css')],
     providers:[UserService]
 })
 export class LoginComponent {
@@ -32,7 +32,10 @@ export class LoginComponent {
                                         else {
                                         window.location.reload();
                                     }
-                                });
+                                },
+  function (err) {
+    console.log('Error: %s', err);
+  });
     }
 
 }
