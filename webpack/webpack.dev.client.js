@@ -10,7 +10,7 @@ const rootDir = path.resolve(__dirname, '..');
 module.exports = {
     debug: true,
     devServer: {
-        contentBase: path.resolve(rootDir, 'dist2'),
+        contentBase: path.resolve(rootDir, 'dist'),
         port: 9002
     },
     devtool: 'source-map',
@@ -21,11 +21,11 @@ module.exports = {
     module: {
         loaders: [
             { loader: 'raw', test: /\.(css|html)$/ },
-            { exclude: /node_modules/, loader: 'ts', test: /\.ts$/ }
+            { exclude: /node_modules/, loaders: ["awesome-typescript", "angular2-template"], test: /\.ts$/ }
         ]
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].[hash].bundle.js',
         path: path.resolve(rootDir, 'dist')
     },
     plugins: [

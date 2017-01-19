@@ -8,7 +8,7 @@
         "tsc": "tsc",
         "tsc:w": "tsc -w",
         "typings": "typings",
-        "start-webpack": "webpack-dev-server --config ./webpack/webpack.dev.client.js"
+        "start-webpack": "webpack-dev-server --hot --inline --config ./webpack/webpack.dev.client.js"
     },
     "license": "ISC",
     "dependencies": {
