@@ -1,6 +1,6 @@
   const webpack = require('webpack');
   const WebpackDevServer = require("webpack-dev-server");
-  const config = require('./webpack.config.babel.js');
+  const config = require('./webpack/webpack.dev.js')();
 
   const compiler = webpack(config);
 

@@ -15,7 +15,7 @@ module.exports = {
     },
     devtool: 'source-map',
     entry: {
-        app: [path.resolve(rootDir, 'client', 'main')],
+        app: [path.resolve(rootDir, 'client', 'bootstrap.jit')],
         vendor: [path.resolve(rootDir, 'client', 'vendor')]
     },
     module: {
