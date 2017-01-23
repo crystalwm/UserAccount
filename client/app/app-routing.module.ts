@@ -9,16 +9,20 @@ const routeConfig:Routes=[
     {
         path:'login',
         component:LoginComponent
-    },
-    {
+    }
+    ,{
         path:'admin',
         loadChildren:'app/admin/admin.module#AdminModule',
         canLoad:[AuthGuardService]
-    },   
-    {
+    }
+    ,{
         path:'',
         component:LoginComponent
     }
+    // ,{
+    //     path:'**',
+    //     component:LoginComponent
+    // }
 ];
 
 @NgModule({

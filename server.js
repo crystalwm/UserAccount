@@ -1,33 +1,25 @@
-  const webpack = require('webpack');
-  const WebpackDevServer = require("webpack-dev-server");
-  const config = require('./webpack/webpack.dev.js')();
+var koa = require('koa');
+var app = koa();
+var router = require('koa-router');
+var api = router();
+require('./webpack/webpackdev.server')(api);
+var render = require('koa-swig');
+var path = require('path');
+serve = require('koa-static');
 
-  const compiler = webpack(config);
+app.context.render = render({
+    root: path.join(__dirname, './dist'),
+    ext: 'html'
+});
 
-  compiler.run((err, stats) => {
-      if (err) {
-          console.log("webpack compiler err:\n");
-          console.log(err);
-      }
-
-      console.log("webpack the project ");
-  });
+// api.get('/', function() {
+//     this.render("./dist/index");
+// })
 
 
-  /*
-      var server = new WebpackDevServer(compiler, {
-          hot: true,
-          quiet: true,
-          noInfo: false,
-          stats: { colors: true },
-          historyApiFallback: true,
-          clientLogLevel: "warning",
-          watchOptions: {
-              aggregateTimeout: 300,
-              poll: 1000
-          }
-      });
 
-      // Webpack dev server
-      server.listen(4005)
-      */
+app
+    .use(serve(path.join(__dirname, './dist')))
+    .use(api.routes());
+
+app.listen(8080);

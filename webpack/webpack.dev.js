@@ -18,16 +18,17 @@ module.exports = function(options) {
         module: {
             loaders: [
                 { loader: 'raw', test: /\.(css|html)$/ },
-                { exclude: /node_modules/, loaders: ["awesome-typescript", "angular2-template"], test: /\.ts$/ }
+                // { loader: 'ts', test: /\.ts$/ }
+                { loaders: ["awesome-typescript", "angular2-template"], test: /\.ts$/ }
             ]
         },
         output: {
-            filename: '[name].[hash].bundle.js',
+            filename: '[name].bundle.js',
             path: path.resolve(rootDir, 'dist')
         },
         plugins: [
             new ChunkWebpack({
-                filename: 'vendor.bundle.js',
+                filename: 'vendor.js',
                 minChunks: Infinity,
                 name: 'vendor'
             }),
