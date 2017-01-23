@@ -19,10 +19,10 @@ const routeConfig:Routes=[
         path:'',
         component:LoginComponent
     }
-    // ,{
-    //     path:'**',
-    //     component:LoginComponent
-    // }
+    ,{
+        path:'**',
+        component:LoginComponent
+    }
 ];
 
 @NgModule({

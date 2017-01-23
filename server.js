@@ -7,10 +7,10 @@ var render = require('koa-swig');
 var path = require('path');
 serve = require('koa-static');
 
-app.context.render = render({
-    root: path.join(__dirname, './dist'),
-    ext: 'html'
-});
+// app.context.render = render({
+//     root: path.join(__dirname, './dist'),
+//     ext: 'html'
+// });
 
 // api.get('/', function() {
 //     this.render("./dist/index");
@@ -19,7 +19,7 @@ app.context.render = render({
 
 
 app
-    .use(serve(path.join(__dirname, './dist')))
+// .use(serve(path.join(__dirname, './dist')))
     .use(api.routes());
 
 app.listen(8080);
