@@ -22,4 +22,14 @@ app
 // .use(serve(path.join(__dirname, './dist')))
     .use(api.routes());
 
-app.listen(8080);
+
+var fs = require('fs');
+var pathCert = './server/ssl/';
+var options = {
+    key: fs.readFileSync(pathCert + 'my-server.key.pem'),
+    cert: fs.readFileSync(pathCert + 'my-server.crt.pem')
+};
+require('https')
+    .createServer(options, app.callback()).listen(8080, function() {
+        console.log("app listening on port 8080");
+    });

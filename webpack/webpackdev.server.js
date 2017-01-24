@@ -9,16 +9,16 @@ var _ = require('underscore-contrib');
 
 
 module.exports = function(api) {
-    var proxy = pixie({ host: 'http://localhost:8081/' });
+    var proxy = pixie({ host: 'https://localhost:8081/' });
 
     api.get('/dist', proxy('/'));
     _.map(config.entry, function(value, key) {
 
         config.entry[key].unshift('webpack/hot/dev-server');
-        config.entry[key].unshift('webpack-dev-server/client?http://127.0.0.1:8081/');
+        config.entry[key].unshift('webpack-dev-server/client?https://127.0.0.1:8081/');
 
     });
-    config.output.publicPath = "http://localhost:8081/";
+    config.output.publicPath = "https://localhost:8081/";
 
 
     config.plugins = (config.plugins || []).concat([
@@ -27,9 +27,14 @@ module.exports = function(api) {
     ]);
 
     var compiler = webpack(config);
+    var fs = require('fs');
+    var pathCert = './server/ssl/';
 
     var server = new WebpackDevServer(compiler, {
         hot: true,
+        https: true,
+        key: fs.readFileSync(path.resolve(rootDir, pathCert + 'my-server.key.pem')),
+        cert: fs.readFileSync(path.resolve(rootDir, pathCert + 'my-server.crt.pem')),
         // // webpack-dev-middleware options
         // quiet: true,
         noInfo: false,
@@ -41,7 +46,7 @@ module.exports = function(api) {
         stats: { colors: true },
     });
     server.listen(8081, "127.0.0.1", function() {
-        console.log('Listening at http://127.0.0.1:8081')
+        console.log('Listening at https://127.0.0.1:8081')
     });
 
 }
