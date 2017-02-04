@@ -28,13 +28,14 @@ module.exports = function(api) {
 
     var compiler = webpack(config);
     var fs = require('fs');
-    var pathCert = './server/ssl/';
+    var pathCert = './webpack/CA/';
 
     var server = new WebpackDevServer(compiler, {
         hot: true,
         https: true,
-        key: fs.readFileSync(path.resolve(rootDir, pathCert + 'my-server.key.pem')),
-        cert: fs.readFileSync(path.resolve(rootDir, pathCert + 'my-server.crt.pem')),
+        key: fs.readFileSync(path.resolve(rootDir, pathCert + 'my-client-ca.key.pem')),
+        cert: fs.readFileSync(path.resolve(rootDir, pathCert + 'my-client-ca.crt')),
+        cacert: fs.readFileSync(path.resolve(rootDir, './RootCA/' + 'my-root-ca.crt.pem')),
         // // webpack-dev-middleware options
         // quiet: true,
         noInfo: false,

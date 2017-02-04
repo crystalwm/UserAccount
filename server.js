@@ -24,10 +24,12 @@ app
 
 
 var fs = require('fs');
-var pathCert = './server/ssl/';
+var pathCert = './server/CA/';
 var options = {
-    key: fs.readFileSync(pathCert + 'my-server.key.pem'),
-    cert: fs.readFileSync(pathCert + 'my-server.crt.pem')
+    key: fs.readFileSync(pathCert + 'my-server-ca.key.pem'),
+    cert: fs.readFileSync(pathCert + 'my-server-ca.crt'),
+    ca: fs.readFileSync('./RootCA/' + 'my-root-ca.crt.pem'),
+    rejectUnauthorized: false
 };
 require('https')
     .createServer(options, app.callback()).listen(8080, function() {
