@@ -4,13 +4,15 @@ var router = require('koa-router');
 var api = router();
 require('./webpack/webpackdev.server')(api);
 var render = require('koa-swig');
+var json = require('koa-json');
 var path = require('path');
-var https = require('https');
-serve = require('koa-static');
-var rootCas = require('ssl-root-cas/latest').create();
-require('ssl-root-cas/latest')
-    .inject()
-    .addFile('./RootCA/' + 'my-root-ca.crt.pem');
+// var https = require('https');
+var serve = require('koa-static');
+var controller = require('./server/routes/controller.js');
+// var rootCas = require('ssl-root-cas/latest').create();
+// require('ssl-root-cas/latest')
+//     .inject()
+//     .addFile('./RootCA/' + 'my-root-ca.crt.pem');
 
 // app.context.render = render({
 //     root: path.join(__dirname, './dist'),
@@ -25,23 +27,29 @@ require('ssl-root-cas/latest')
 
 app
 // .use(serve(path.join(__dirname, './dist')))
+    .use(json())
+    .use(controller.routes())
     .use(api.routes());
 
+require('http').createServer(app.callback()).listen(8080, function() {
+    console.log("app listening on port 8080");
+});
 
-var fs = require('fs');
-var pathCert = './server/CA/';
-var options = {
-    key: fs.readFileSync(pathCert + 'my-server-ca.key.pem'),
-    cert: fs.readFileSync(pathCert + 'my-server-ca.crt'),
-    checkServerIdentity: function(host, cert) {
-        if (host != cert.subject.CN)
-            return 'Incorrect server identity'; // Return error in case of failed checking.
-        // Return undefined value in case of successful checking.
-        // I.e. you could use empty function body to accept all CN's.
-    }
-};
-options.agent = new https.Agent(options);
-https
-    .createServer(options, app.callback()).listen(8080, function() {
-        console.log("app listening on port 8080");
-    });
+
+// var fs = require('fs');
+// var pathCert = './server/CA/';
+// var options = {
+//     key: fs.readFileSync(pathCert + 'my-server-ca.key.pem'),
+//     cert: fs.readFileSync(pathCert + 'my-server-ca.crt'),
+//     checkServerIdentity: function(host, cert) {
+//         if (host != cert.subject.CN)
+//             return 'Incorrect server identity'; // Return error in case of failed checking.
+//         // Return undefined value in case of successful checking.
+//         // I.e. you could use empty function body to accept all CN's.
+//     }
+// };
+// options.agent = new https.Agent(options);
+// https
+//     .createServer(options, app.callback()).listen(8080, function() {
+//         console.log("app listening on port 8080");
+//     });

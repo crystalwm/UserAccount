@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 
 import {LoginModule} from './login/login.module';
 import {AppComponent} from './app.component';
@@ -18,7 +19,8 @@ import {AuthGuardService} from './services/guard/auth-guard.service';
         BrowserModule,
         FormsModule,
         LoginModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HttpModule
 
     ],
     declarations:[
