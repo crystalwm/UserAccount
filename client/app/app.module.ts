@@ -5,6 +5,8 @@ import {HttpModule} from '@angular/http';
 import { Router } from '@angular/router';
 
 import {LoginModule} from './login/login.module';
+//for test,so import it
+import {AdminModule} from './admin/admin.module';
 import {AppComponent} from './app.component';
 
 
@@ -22,6 +24,7 @@ import {AuthGuardService} from './services/guard/auth-guard.service';
         BrowserModule,
         FormsModule,
         LoginModule,
+        AdminModule,
         AppRoutingModule,
         HttpModule
 

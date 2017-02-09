@@ -3,6 +3,7 @@ import{RouterModule,Routes} from '@angular/router';
 import{AuthGuardService} from './services/guard/auth-guard.service';
 
 import {LoginComponent} from './login/login.component';
+import {AdminComponent} from './admin/admin.component';
 
 
 const routeConfig:Routes=[
@@ -21,7 +22,7 @@ const routeConfig:Routes=[
     }
     ,{
         path:'**',
-        component:LoginComponent
+        component:AdminComponent
     }
 ];
 

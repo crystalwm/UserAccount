@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 
 @Component({
-    template:`
-        <p>welcome to the admin module</p>
-    `
+    selector: 'admin',
+    templateUrl: './main.html',
+    styleUrls: ['./main.css'],
 })
 export class AdminComponent{}
