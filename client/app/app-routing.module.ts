@@ -12,7 +12,7 @@ const routeConfig:Routes=[
     }
     ,{
         path:'admin',
-        loadChildren:'app/admin/admin.module#AdminModule',
+        loadChildren:'./admin/admin.module#AdminModule',
         canLoad:[AuthGuardService]
     }
     ,{

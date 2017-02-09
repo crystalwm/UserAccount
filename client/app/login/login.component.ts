@@ -24,10 +24,11 @@ export class LoginComponent {
 
 
     onSubmit = function ($event, username, password) {
+        var that=this;
         this.userService.isUserReg(username, password)
             .then((isReg) => {
                 if (isReg) {
-                    this.router.navigate(['/admin']);
+                    that.router.navigate(['/admin']);
                 }
                 else {
                    window.location.reload();

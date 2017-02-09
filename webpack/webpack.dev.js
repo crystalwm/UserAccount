@@ -18,7 +18,7 @@ module.exports = function(options) {
         module: {
             loaders: [
                 { loader: 'raw', test: /\.(css|html)$/ },
-                { loaders: ["awesome-typescript", "angular2-template"], test: /\.ts$/ }
+                { loaders: ["awesome-typescript", "angular-router", "angular2-template"], test: /\.ts$/ }
             ]
         },
         output: {
