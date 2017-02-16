@@ -22,7 +22,7 @@ const routeConfig:Routes=[
     }
     ,{
         path:'**',
-        component:AdminComponent
+        component:LoginComponent
     }
 ];
 
