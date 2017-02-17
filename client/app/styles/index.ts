@@ -1,1 +1,1 @@
-require('./css/test.css');
+require('./css/ionicons.css');

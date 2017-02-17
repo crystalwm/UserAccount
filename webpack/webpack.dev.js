@@ -9,7 +9,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const rootDir = path.resolve(__dirname, '..');
 
-module.exports = function (options) {
+module.exports = function(options) {
     return {
         debug: true,
         devtool: 'source-map',
@@ -27,8 +27,17 @@ module.exports = function (options) {
                     test: /\.ts$/
                 },
                 {
-                    test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") ,
+                    test: /\.css$/,
+                    loader: ExtractTextPlugin.extract("style-loader", "css-loader"),
                     include: path.resolve(rootDir, 'client', 'app/styles')
+                },
+                {
+                    test: /\.(ttf|eot|svg)(\?v=.+)?$/,
+                    loader: 'file'
+                },
+                {
+                    test: /\.woff(2)?(\?v=.+)?$/,
+                    loader: 'url?limit=10000&mimetype=application/font-woff'
                 }
             ]
         },
@@ -39,7 +48,7 @@ module.exports = function (options) {
         plugins: [
             new ExtractTextPlugin('[name].css', { allChunks: true, disable: false }),
             new AssetsPlugin({
-                path: path.resolve(rootDir,'dist'),
+                path: path.resolve(rootDir, 'dist'),
                 filename: 'webpack-assets.json',
                 prettyPrint: true
             }),
