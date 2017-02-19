@@ -31,7 +31,7 @@
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-typescript": "^3.1.4",
-    "ionicons": "^3.0.0",
+    "ionicons": "^2.0.1",
     "koa": "^1.2.4",
     "koa-body": "^1.6.0",
     "koa-json": "^1.1.3",

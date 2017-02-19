@@ -5,7 +5,4 @@ import {Component} from '@angular/core';
   template: `<p>welcome to forms</p>`
 })
 export class FormsComponent {
-
-  constructor() {
-  }
 }
