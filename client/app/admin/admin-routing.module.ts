@@ -5,6 +5,7 @@ import {
 import { NgModule } from '@angular/core';
 
 
+
 const routes: Routes = [
     { path: '', redirectTo: 'pages', pathMatch: 'full' },
     { path: '**', redirectTo: 'pages/forms' }
