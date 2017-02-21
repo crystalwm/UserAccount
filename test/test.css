@@ -1,0 +1,65 @@
+.labelUpgradeWarning {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    background-color: black;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+
+.labelUpgradeWarning .labelWarning {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.labelUpgradeWarning .label {
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.labelUpgradeWarning .label p {
+    font-size: 13px;
+    color: white;
+}
+
+.labelUpgradeWarning ul {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.labelUpgradeWarning a {
+    text-decoration: underline;
+    color: white;
+}
+
+.labelUpgradeWarning .labelBold {
+    font-size: 15px;
+    font-weight: Bold;
+    color: white;
+}
+
+#popup_error_box {
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 15px 20px auto 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+
+#popup_error_box #popup_box_header {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#popup_error_box #popup_box_text {
+    font-size: 13px;
+}

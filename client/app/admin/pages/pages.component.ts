@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'pages',
     template: `
-        <header></header>    
-         <router-outlet></router-outlet>
+        <header></header>
+        <sidebar></sidebar>    
+        <router-outlet></router-outlet>
     
     `
 })

@@ -49,8 +49,6 @@ var list = {
 };
 
 router
-    .get('/', koaBody, list.loginRender)
-    .post('/', koaBody, list.login)
     .post('/isUserReg', koaBody, list.isUserReg)
     .get('/main', koaBody, list.mainRender);
 module.exports = router;

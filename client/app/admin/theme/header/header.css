@@ -27,7 +27,6 @@ ol {
 .header {
     background-color: #282828;
     color: white;
-    border-bottom: 1px solid #e5e5e5;
     position: fixed;
     height: 66px;
     min-width: 320px;
@@ -59,7 +58,7 @@ a.collapse-menu-link {
     display: block;
     text-decoration: none;
     line-height: 42px;
-    color:#fff;
+    color: #fff;
     padding: 0;
     float: left;
     margin: 15px 0 0 25px;
@@ -86,7 +85,7 @@ a.collapse-menu-link {
     margin-right: 13px;
 }
 
-.header-search  input {
+.header-search input {
     color: #ffffff;
     background: none;
     border: none;
@@ -96,8 +95,6 @@ a.collapse-menu-link {
     margin: 0 0 0 -3px;
     height: 27px;
 }
-
-
 
 .header-nav {
     list-style: none
@@ -126,4 +123,3 @@ a.collapse-menu-link {
 .header-nav-link:focus .dropdown-caret {
     border-top-color: #4078c0
 }
-

@@ -11,7 +11,7 @@ var _ = require('underscore-contrib');
 module.exports = function(api) {
     var proxy = pixie({ host: 'http://localhost:8081/' });
 
-    api.get('/dist', proxy('/'));
+    api.get('/', proxy('/'));
     _.map(config.entry, function(value, key) {
 
         config.entry[key].unshift('webpack/hot/dev-server');
