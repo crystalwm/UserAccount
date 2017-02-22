@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { FormsComponent } from './forms.component';
-import { routing }       from './forms.routing';
+import { AngularMaterialComponent } from './angularMaterial/angularMaterial.component';
+import { routing } from './forms.routing';
 
 
 
 @NgModule({
-    imports:[
+    imports: [
         routing
     ],
-    declarations:[FormsComponent]
+    declarations: [FormsComponent, AngularMaterialComponent]
 })
-export class FormsModule{ }
+export class FormsModule { }

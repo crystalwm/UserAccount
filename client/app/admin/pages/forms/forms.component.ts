@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'forms',
-  template: `<p>welcome to forms</p>`
+  template: `<router-outlet></router-outlet>`
 })
 export class FormsComponent {
 }

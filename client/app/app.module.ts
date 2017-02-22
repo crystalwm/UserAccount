@@ -3,6 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import { Router } from '@angular/router';
+import { MaterialModule } from '@angular/material';
 
 import {LoginModule} from './login/login.module';
 //for test,so import it
@@ -26,7 +27,8 @@ import {AuthGuardService} from './services/guard/auth-guard.service';
         LoginModule,
         AdminModule,
         AppRoutingModule,
-        HttpModule
+        HttpModule,
+        MaterialModule
 
     ],
     declarations:[

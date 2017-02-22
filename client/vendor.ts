@@ -6,6 +6,10 @@ import 'zone.js/dist/long-stack-trace-zone';
 
 import '@angular/platform-browser';
 
+// Angular2 material
+import '@angular/material'
+
+
 import 'rxjs';
 
 
