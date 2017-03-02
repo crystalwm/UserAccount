@@ -11,7 +11,6 @@ import { ThemeModule } from './theme/theme.module';
         ThemeModule,
         AdminRoutingModule,
         PagesModule
-
     ],
     declarations: [AdminComponent],
     bootstrap: [AdminComponent]

@@ -28,8 +28,7 @@ import {AuthGuardService} from './services/guard/auth-guard.service';
         AdminModule,
         AppRoutingModule,
         HttpModule,
-        MaterialModule
-
+         MaterialModule.forRoot()
     ],
     declarations:[
         AppComponent

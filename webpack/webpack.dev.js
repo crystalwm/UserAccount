@@ -16,19 +16,26 @@ module.exports = function(options) {
         entry: {
             app: [path.resolve(rootDir, 'client', 'bootstrap.jit')],
             vendor: [path.resolve(rootDir, 'client', 'vendor')],
+
             styles: [path.resolve(rootDir, 'client', 'app/styles')]
         },
         module: {
             loaders: [
                 { loader: 'raw', test: /\.(css|html)$/ },
-                { loader: 'json', test: /\.json$/ },
                 {
                     loaders: ["awesome-typescript", "angular-router", "angular2-template"],
                     test: /\.ts$/
                 },
+                // {
+                //     test: /\.css$/,
+                //     loader: ExtractTextPlugin.extract("style-loader", "css-loader"),
+                //     include: path.resolve(rootDir, 'client', 'app/styles')
+                // },
+
                 {
-                    test: /\.css$/,
-                    loader: ExtractTextPlugin.extract("style-loader", "css-loader"),
+
+                    test: /\.scss$/,
+                    loader: ExtractTextPlugin.extract(['css', 'sass']),
                     include: path.resolve(rootDir, 'client', 'app/styles')
                 },
                 {
@@ -64,7 +71,7 @@ module.exports = function(options) {
             })
         ],
         resolve: {
-            extensions: ['', '.ts', '.js', '.css']
+            extensions: ['', '.ts', '.js', '.css', '.scss']
         }
     };
 }
