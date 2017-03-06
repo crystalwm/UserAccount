@@ -3,8 +3,7 @@
     "js": "http://localhost:8081/app.bundle.js"
   },
   "styles": {
-    "js": "http://localhost:8081/styles.bundle.js",
-    "css": "http://localhost:8081/styles.css"
+    "js": "http://localhost:8081/styles.bundle.js"
   },
   "vendor": {
     "js": "http://localhost:8081/vendor.js"

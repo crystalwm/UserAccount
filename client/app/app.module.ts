@@ -1,43 +1,45 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { Router } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 
-import {LoginModule} from './login/login.module';
+import { LoginModule } from './login/login.module';
 //for test,so import it
-import {AdminModule} from './admin/admin.module';
-import {AppComponent} from './app.component';
+import { AdminModule } from './admin/admin.module';
+import { AppComponent } from './app.component';
 
 
-import {AppRoutingModule} from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
-import {UserService} from './services/users/user.service';
-import {LoggerService} from './services/logger/logger.service';
-import {AuthGuardService} from './services/guard/auth-guard.service';
+import { UserService } from './services/users/user.service';
+import { LoggerService } from './services/logger/logger.service';
+import { AuthGuardService } from './services/guard/auth-guard.service';
+
+import 'hammerjs';
 
 
 
 
 @NgModule({
-    imports:[
+    imports: [
         BrowserModule,
         FormsModule,
         LoginModule,
         AdminModule,
         AppRoutingModule,
         HttpModule,
-         MaterialModule.forRoot()
+        MaterialModule
     ],
-    declarations:[
+    declarations: [
         AppComponent
     ],
-    providers:[
+    providers: [
         UserService,
         LoggerService,
         AuthGuardService
     ],
-    bootstrap:[AppComponent]
+    bootstrap: [AppComponent]
 })
-export class AppModule{}
+export class AppModule { }
