@@ -14,10 +14,10 @@ const routes: Routes = [
         path: '',
         component: AdminComponent,
         children: [
-            // {
-            //     path: 'pages',
-            //     component: PagesComponent
-            // },
+            {
+               path: 'pages',
+               loadChildren:'client/app/admin/pages/pages.module#PagesModule'
+            },
             {
                 path: '',
                 redirectTo: 'pages',

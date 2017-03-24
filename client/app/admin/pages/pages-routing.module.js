@@ -11,7 +11,7 @@ var router_1 = require("@angular/router");
 var pages_component_1 = require("./pages.component");
 var routeConfig = [
     {
-        path: 'pages',
+        path: '',
         component: pages_component_1.PagesComponent
         // children: [
         //     { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormsModule'},

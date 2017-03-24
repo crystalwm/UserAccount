@@ -15,10 +15,10 @@ var routes = [
         path: '',
         component: admin_component_1.AdminComponent,
         children: [
-            // {
-            //     path: 'pages',
-            //     component: PagesComponent
-            // },
+            {
+                path: 'pages',
+                loadChildren: 'client/app/admin/pages/pages.module#PagesModule'
+            },
             {
                 path: '',
                 redirectTo: 'pages',

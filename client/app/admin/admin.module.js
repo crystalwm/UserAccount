@@ -9,7 +9,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var admin_component_1 = require("./admin.component");
 var admin_routing_module_1 = require("./admin-routing.module");
-var pages_module_1 = require("./pages/pages.module");
 var theme_module_1 = require("./theme/theme.module");
 var AdminModule = (function () {
     function AdminModule() {
@@ -20,7 +19,6 @@ AdminModule = __decorate([
     core_1.NgModule({
         imports: [
             theme_module_1.ThemeModule,
-            pages_module_1.PagesModule,
             admin_routing_module_1.AdminRoutingModule
         ],
         declarations: [admin_component_1.AdminComponent],
