@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var forms_component_1 = require("./forms.component");
 var angularMaterial_component_1 = require("./angularMaterial/angularMaterial.component");
-// import { FormsRoutingModule } from './forms-routing.module';
+var forms_routing_module_1 = require("./forms-routing.module");
 var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
 var FormsModule = (function () {
     function FormsModule() {
@@ -19,7 +19,7 @@ var FormsModule = (function () {
 FormsModule = __decorate([
     core_1.NgModule({
         imports: [
-            // FormsRoutingModule,
+            forms_routing_module_1.FormsRoutingModule,
             ng2_bootstrap_1.AlertModule
         ],
         declarations: [forms_component_1.FormsComponent, angularMaterial_component_1.AngularMaterialComponent]

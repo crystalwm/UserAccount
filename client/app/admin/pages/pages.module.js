@@ -11,7 +11,6 @@ var common_1 = require("@angular/common");
 var pages_component_1 = require("./pages.component");
 var pages_routing_module_1 = require("./pages-routing.module");
 var theme_module_1 = require("../theme/theme.module");
-//import { FormsModule } from './forms/forms.module';
 var PagesModule = (function () {
     function PagesModule() {
     }
@@ -23,7 +22,6 @@ PagesModule = __decorate([
             common_1.CommonModule,
             theme_module_1.ThemeModule,
             pages_routing_module_1.PagesRoutingModule
-            //      FormsModule
         ],
         declarations: [pages_component_1.PagesComponent]
     })

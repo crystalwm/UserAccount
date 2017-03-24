@@ -12,11 +12,11 @@ var pages_component_1 = require("./pages.component");
 var routeConfig = [
     {
         path: '',
-        component: pages_component_1.PagesComponent
-        // children: [
-        //     { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormsModule'},
-        //     { path: '', redirectTo: 'forms', pathMatch: 'full' },
-        // ]
+        component: pages_component_1.PagesComponent,
+        children: [
+            { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormsModule' },
+            { path: '', redirectTo: 'forms', pathMatch: 'full' },
+        ]
     }
 ];
 var PagesRoutingModule = (function () {

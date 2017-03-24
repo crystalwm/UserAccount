@@ -8,7 +8,7 @@ import { Component,ViewEncapsulation } from '@angular/core';
         <sidebar></sidebar>  
         <div class="main">
             <div class="content">
-             
+                 <router-outlet></router-outlet>
             </div>
         </div>      
     `,

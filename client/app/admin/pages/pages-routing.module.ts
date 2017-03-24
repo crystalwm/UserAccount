@@ -8,12 +8,12 @@ import { PagesComponent } from './pages.component';
 const routeConfig: Routes = [
     {
         path: '',
-        component: PagesComponent
-        // children: [
-        //     { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormsModule'},
-        //     { path: '', redirectTo: 'forms', pathMatch: 'full' },
+        component: PagesComponent,
+        children: [
+            { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormsModule'},
+            { path: '', redirectTo: 'forms', pathMatch: 'full' },
         
-        // ]
+        ]
     }
 ];
 
