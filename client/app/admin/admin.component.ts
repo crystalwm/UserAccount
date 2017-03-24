@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
+     moduleId: module.id,
     selector: 'admin',
     //   templateUrl: './main.html',
     //  styleUrls: ['./main.css'],

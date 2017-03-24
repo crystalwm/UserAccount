@@ -10,6 +10,12 @@ import '@angular/platform-browser';
 import 'hammerjs';
 
 
+// Web dependencies
+import 'jquery';
+require('../node_modules/bootstrap/dist/css/bootstrap.css');
+import 'bootstrap/dist/js/bootstrap.js'
+
+
 import 'rxjs';
 
 

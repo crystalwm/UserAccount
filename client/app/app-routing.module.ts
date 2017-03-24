@@ -3,7 +3,7 @@ import{RouterModule,Routes} from '@angular/router';
 import{AuthGuardService} from './services/guard/auth-guard.service';
 
 import {LoginComponent} from './login/login.component';
-import {AdminComponent} from './admin/admin.component';
+
 
 
 const routeConfig:Routes=[
@@ -13,16 +13,13 @@ const routeConfig:Routes=[
     }
     ,{
         path:'admin',
-        loadChildren:'./admin/admin.module#AdminModule',
-        canLoad:[AuthGuardService]
+        loadChildren:'client/app/admin/admin.module#AdminModule'
+
     }
     ,{
         path:'',
-        component:LoginComponent
-    }
-    ,{
-        path:'**',
-        component:AdminComponent
+        redirectTo:'admin',
+        pathMatch:'full'
     }
 ];
 

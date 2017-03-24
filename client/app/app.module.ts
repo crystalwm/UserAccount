@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { Router } from '@angular/router';
-import { MaterialModule } from '@angular/material';
+
+
+
 
 import { LoginModule } from './login/login.module';
 //for test,so import it
-import { AdminModule } from './admin/admin.module';
 import { AppComponent } from './app.component';
 
 
@@ -17,7 +17,7 @@ import { UserService } from './services/users/user.service';
 import { LoggerService } from './services/logger/logger.service';
 import { AuthGuardService } from './services/guard/auth-guard.service';
 
-import 'hammerjs';
+
 
 
 
@@ -26,11 +26,10 @@ import 'hammerjs';
     imports: [
         BrowserModule,
         FormsModule,
+        ReactiveFormsModule,
         LoginModule,
-        AdminModule,
         AppRoutingModule,
-        HttpModule,
-        MaterialModule
+        HttpModule
     ],
     declarations: [
         AppComponent
