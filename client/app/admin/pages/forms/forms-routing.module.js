@@ -9,15 +9,33 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var router_1 = require("@angular/router");
 var core_1 = require("@angular/core");
 var forms_component_1 = require("./forms.component");
-var angularMaterial_component_1 = require("./angularMaterial/angularMaterial.component");
+var standardFields_component_1 = require("./standardFields/standardFields.component");
+var validationStates_component_1 = require("./validationStates/validationStates.component");
+var inputGroups_component_1 = require("./inputGroups/inputGroups.component");
+var ratingInputs_component_1 = require("./ratingInputs/ratingInputs.component");
+var selectInputs_component_1 = require("./selectInputs/selectInputs.component");
+var layoutBascicForm_component_1 = require("./layoutBasicForm/layoutBascicForm.component");
+var layoutBlockForm_component_1 = require("./layoutBlockForm/layoutBlockForm.component");
+var layoutHorizontalForm_component_1 = require("./layoutHorizontalForm/layoutHorizontalForm.component");
+var layoutInlineForm_component_1 = require("./layoutInlineForm/layoutInlineForm.component");
+var layoutWithoutLabelsForm_component_1 = require("./layoutWithoutLabelsForm/layoutWithoutLabelsForm.component");
 // noinspection TypeScriptValidateTypes
 var routeConfig = [
     {
         path: '',
         component: forms_component_1.FormsComponent,
         children: [
-            { path: '', redirectTo: 'material', pathMatch: 'full' },
-            { path: 'material', component: angularMaterial_component_1.AngularMaterialComponent }
+            { path: 'standard-fields', component: standardFields_component_1.StandardFieldsComponent },
+            { path: 'validation-states', component: validationStates_component_1.ValidationStatesComponent },
+            { path: 'input-groups', component: inputGroups_component_1.InputGroupsComponent },
+            { path: 'rating-inputs', component: ratingInputs_component_1.RatingInputsComponentt },
+            { path: 'select-inputs', component: selectInputs_component_1.SelectInputsComponent },
+            { path: 'layout-basci-form', component: layoutBascicForm_component_1.LayoutBasciFormComponent },
+            { path: 'layout-block-form', component: layoutBlockForm_component_1.LayoutBlockFormComponent },
+            { path: 'layout-inline-form', component: layoutHorizontalForm_component_1.LayoutHorizontalForm },
+            { path: 'layout-horizontal-form', component: layoutInlineForm_component_1.LayoutInlineFormComponent },
+            { path: 'layout-without-lable-form', component: layoutWithoutLabelsForm_component_1.LayoutWithoutLabelsFormComponent },
+            { path: '', redirectTo: 'validation-states', pathMatch: 'full' }
         ]
     }
 ];

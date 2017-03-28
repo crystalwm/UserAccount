@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var common_1 = require("@angular/common");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
@@ -17,6 +18,8 @@ var app_routing_module_1 = require("./app-routing.module");
 var user_service_1 = require("./services/users/user.service");
 var logger_service_1 = require("./services/logger/logger.service");
 var auth_guard_service_1 = require("./services/guard/auth-guard.service");
+//ng2-bootstrap
+// import { AlertModule, RatingModule,TabsModule  } from 'ng2-bootstrap/ng2-bootstrap';
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,11 +29,14 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
+            common_1.CommonModule,
             forms_1.FormsModule,
-            forms_1.ReactiveFormsModule,
             login_module_1.LoginModule,
             app_routing_module_1.AppRoutingModule,
             http_1.HttpModule
+            // TabsModule.forRoot(),
+            // AlertModule.forRoot(),
+            // RatingModule.forRoot()
         ],
         declarations: [
             app_component_1.AppComponent

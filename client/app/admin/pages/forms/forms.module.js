@@ -7,23 +7,48 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var common_1 = require("@angular/common");
+var forms_1 = require("@angular/forms");
 var forms_component_1 = require("./forms.component");
-var angularMaterial_component_1 = require("./angularMaterial/angularMaterial.component");
+var standardFields_component_1 = require("./standardFields/standardFields.component");
+var validationStates_component_1 = require("./validationStates/validationStates.component");
 var forms_routing_module_1 = require("./forms-routing.module");
+var inputGroups_component_1 = require("./inputGroups/inputGroups.component");
+var ratingInputs_component_1 = require("./ratingInputs/ratingInputs.component");
+var selectInputs_component_1 = require("./selectInputs/selectInputs.component");
+var layoutBascicForm_component_1 = require("./layoutBasicForm/layoutBascicForm.component");
+var layoutBlockForm_component_1 = require("./layoutBlockForm/layoutBlockForm.component");
+var layoutHorizontalForm_component_1 = require("./layoutHorizontalForm/layoutHorizontalForm.component");
+var layoutInlineForm_component_1 = require("./layoutInlineForm/layoutInlineForm.component");
+var layoutWithoutLabelsForm_component_1 = require("./layoutWithoutLabelsForm/layoutWithoutLabelsForm.component");
 var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
-var FormsModule = (function () {
-    function FormsModule() {
+var FormscModule = (function () {
+    function FormscModule() {
     }
-    return FormsModule;
+    return FormscModule;
 }());
-FormsModule = __decorate([
+FormscModule = __decorate([
     core_1.NgModule({
         imports: [
             forms_routing_module_1.FormsRoutingModule,
-            ng2_bootstrap_1.AlertModule
+            common_1.CommonModule,
+            forms_1.FormsModule,
+            ng2_bootstrap_1.AlertModule.forRoot(),
+            ng2_bootstrap_1.RatingModule.forRoot()
         ],
-        declarations: [forms_component_1.FormsComponent, angularMaterial_component_1.AngularMaterialComponent]
+        declarations: [forms_component_1.FormsComponent,
+            validationStates_component_1.ValidationStatesComponent,
+            standardFields_component_1.StandardFieldsComponent,
+            inputGroups_component_1.InputGroupsComponent,
+            ratingInputs_component_1.RatingInputsComponentt,
+            selectInputs_component_1.SelectInputsComponent,
+            layoutBascicForm_component_1.LayoutBasciFormComponent,
+            layoutBlockForm_component_1.LayoutBlockFormComponent,
+            layoutHorizontalForm_component_1.LayoutHorizontalForm,
+            layoutInlineForm_component_1.LayoutInlineFormComponent,
+            layoutWithoutLabelsForm_component_1.LayoutWithoutLabelsFormComponent
+        ]
     })
-], FormsModule);
-exports.FormsModule = FormsModule;
+], FormscModule);
+exports.FormscModule = FormscModule;
 //# sourceMappingURL=forms.module.js.map

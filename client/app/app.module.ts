@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 
@@ -18,6 +19,8 @@ import { LoggerService } from './services/logger/logger.service';
 import { AuthGuardService } from './services/guard/auth-guard.service';
 
 
+//ng2-bootstrap
+// import { AlertModule, RatingModule,TabsModule  } from 'ng2-bootstrap/ng2-bootstrap';
 
 
 
@@ -25,11 +28,14 @@ import { AuthGuardService } from './services/guard/auth-guard.service';
 @NgModule({
     imports: [
         BrowserModule,
+        CommonModule,
         FormsModule,
-        ReactiveFormsModule,
         LoginModule,
         AppRoutingModule,
         HttpModule
+        // TabsModule.forRoot(),
+        // AlertModule.forRoot(),
+        // RatingModule.forRoot()
     ],
     declarations: [
         AppComponent

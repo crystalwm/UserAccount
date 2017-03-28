@@ -4,7 +4,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
      moduleId: module.id,
     selector: 'admin',
     //   templateUrl: './main.html',
-    //  styleUrls: ['./main.css'],
+     styleUrls: ['./admin.css'],
     template: `
         <main>
             <router-outlet></router-outlet>

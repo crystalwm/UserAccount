@@ -16,7 +16,7 @@ FormsComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'forms',
-        template: "\n  <div>forms</div>\n  <router-outlet></router-outlet>\n  "
+        template: "\n  <router-outlet></router-outlet>\n  "
     })
 ], FormsComponent);
 exports.FormsComponent = FormsComponent;

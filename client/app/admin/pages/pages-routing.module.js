@@ -14,7 +14,7 @@ var routeConfig = [
         path: '',
         component: pages_component_1.PagesComponent,
         children: [
-            { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormsModule' },
+            { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormscModule' },
             { path: '', redirectTo: 'forms', pathMatch: 'full' },
         ]
     }

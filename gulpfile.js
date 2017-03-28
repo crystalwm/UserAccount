@@ -3,14 +3,16 @@
 var gulp = require('gulp'),
     ts = require('gulp-typescript'),
     sourcemaps = require('gulp-sourcemaps'),
-    clean = require('gulp-clean');
+    clean = require('gulp-clean'),
+    sass = require('gulp-sass');
 
 
 var src = {
         clientTs: ['./client/*.ts', './client/**/*.ts'],
         clientJs: ['./client/*.js', './client/**/*.js'],
         templates: ['./client/*.html', './client/**/*.html'],
-        CSS: ['./client/*.css', './client/**/*.css']
+        CSS: ['./client/*.css', './client/**/*.css'],
+        sass: ['./client/*.scss', './client/**/*.scss']
     },
     dest = {
         dest: './build',
@@ -37,6 +39,8 @@ function compileClientTs() {
     return compileTs(src.clientTs, dest.js);
 }
 
+
+
 function copyHtml() {
     return gulp.src(src.templates)
         .pipe(gulp.dest(dest.templates));
@@ -59,32 +63,42 @@ function startWatchers() {
     gulp.watch(src.CSS, ['copyCSS']);
 }
 
-gulp.task('clean', function() {
-    return gulp.src(dest.dest, { read: false })
-        .pipe(clean());
+// gulp.task('clean', function() {
+//     return gulp.src(dest.dest, { read: false })
+//         .pipe(clean());
+// });
+
+// gulp.task('copyHtml', function() {
+//     return copyHtml();
+// });
+
+// gulp.task('buildTs', function() {
+//     return compileClientTs();
+// });
+
+// gulp.task('build', ['copyHtml', 'buildTs', 'copyClientJs', 'node_modules', 'copyCSS']);
+
+// gulp.task('watch', ['build'], function() {
+//     startWatchers();
+// });
+
+
+// gulp.task('copyClientJs', function() {
+//     return copyClientJs();
+// });
+
+// gulp.task('copyCSS', function() {
+//     return copyCSS();
+// });
+
+gulp.task('sass', function() {
+    return gulp.src(src.sass)
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./client/'));
 });
 
-gulp.task('copyHtml', function() {
-    return copyHtml();
-});
-
-gulp.task('buildTs', function() {
-    return compileClientTs();
-});
-
-gulp.task('build', ['copyHtml', 'buildTs', 'copyClientJs', 'node_modules', 'copyCSS']);
-
-gulp.task('watch', ['build'], function() {
-    startWatchers();
-});
-
-
-gulp.task('copyClientJs', function() {
-    return copyClientJs();
-});
-
-gulp.task('copyCSS', function() {
-    return copyCSS();
+gulp.task('sass:watch', function() {
+    gulp.watch(src.sass, ['sass']);
 });
 
 
@@ -92,16 +106,16 @@ gulp.task('copyCSS', function() {
 /**
  * Copy all required libraries into build directory.
  */
-gulp.task('node_modules', function() {
-    return gulp.src([
-            'core-js/client/shim.min.js',
-            'systemjs/dist/system-polyfills.js',
-            'systemjs/dist/system.src.js',
-            'reflect-metadata/Reflect.js',
-            'rxjs/**/*.js',
-            'zone.js/dist/**',
-            '@angular/**/bundles/**',
-            'bootstrap/dist/css/bootstrap.min.css'
-        ], { cwd: "node_modules/**" }) /* Glob required here. */
-        .pipe(gulp.dest("build/node_modules"));
-});
+// gulp.task('node_modules', function() {
+//     return gulp.src([
+//             'core-js/client/shim.min.js',
+//             'systemjs/dist/system-polyfills.js',
+//             'systemjs/dist/system.src.js',
+//             'reflect-metadata/Reflect.js',
+//             'rxjs/**/*.js',
+//             'zone.js/dist/**',
+//             '@angular/**/bundles/**',
+//             'bootstrap/dist/css/bootstrap.min.css'
+//         ], { cwd: "node_modules/**" }) /* Glob required here. */
+//         .pipe(gulp.dest("build/node_modules"));
+// });

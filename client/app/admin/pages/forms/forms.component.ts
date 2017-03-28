@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
    moduleId: module.id,
   selector: 'forms',
   template: `
-  <div>forms</div>
   <router-outlet></router-outlet>
   `
 })

@@ -17,7 +17,7 @@ AdminComponent = __decorate([
         moduleId: module.id,
         selector: 'admin',
         //   templateUrl: './main.html',
-        //  styleUrls: ['./main.css'],
+        styleUrls: ['./admin.css'],
         template: "\n        <main>\n            <router-outlet></router-outlet>\n        </main>\n  ",
         encapsulation: core_1.ViewEncapsulation.None
     })
