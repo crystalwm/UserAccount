@@ -7,9 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var header_component_1 = require("./header/header.component");
-var sidebar_component_1 = require("./sidebar/sidebar.component");
+var wmHeader_component_1 = require("./components/wmHeader/wmHeader.component");
+var wmSidebar_component_1 = require("./components/wmSidebar/wmSidebar.component");
+var wmCard_component_1 = require("./components/wmCard/wmCard.component");
 var router_1 = require("@angular/router");
+var common_1 = require("@angular/common");
 var ThemeModule = (function () {
     function ThemeModule() {
     }
@@ -17,9 +19,9 @@ var ThemeModule = (function () {
 }());
 ThemeModule = __decorate([
     core_1.NgModule({
-        imports: [router_1.RouterModule],
-        declarations: [header_component_1.HeaderComponent, sidebar_component_1.SidebarComponent],
-        exports: [header_component_1.HeaderComponent, sidebar_component_1.SidebarComponent]
+        imports: [router_1.RouterModule, common_1.CommonModule],
+        declarations: [wmHeader_component_1.WmHeaderComponent, wmSidebar_component_1.WmSidebarComponent, wmCard_component_1.WmCardComponent],
+        exports: [wmHeader_component_1.WmHeaderComponent, wmSidebar_component_1.WmSidebarComponent, wmCard_component_1.WmCardComponent]
     })
 ], ThemeModule);
 exports.ThemeModule = ThemeModule;

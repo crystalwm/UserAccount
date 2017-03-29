@@ -16,8 +16,7 @@ StandardFieldsComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'standard-fields',
-        templateUrl: './standardFields.html',
-        styleUrls: ['./standardFields.css']
+        templateUrl: './standardFields.html'
     })
 ], StandardFieldsComponent);
 exports.StandardFieldsComponent = StandardFieldsComponent;

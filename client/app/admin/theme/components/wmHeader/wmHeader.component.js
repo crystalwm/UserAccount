@@ -7,18 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var HeaderComponent = (function () {
-    function HeaderComponent() {
+var WmHeaderComponent = (function () {
+    function WmHeaderComponent() {
     }
-    return HeaderComponent;
+    return WmHeaderComponent;
 }());
-HeaderComponent = __decorate([
+WmHeaderComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'header',
+        selector: 'wm-header',
         templateUrl: './header.html',
         styleUrls: ['./header.css']
     })
-], HeaderComponent);
-exports.HeaderComponent = HeaderComponent;
+], WmHeaderComponent);
+exports.WmHeaderComponent = WmHeaderComponent;
 //# sourceMappingURL=wmHeader.component.js.map

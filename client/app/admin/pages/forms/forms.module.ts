@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FormsComponent } from './forms.component';
-
+import { ThemeModule } from '../../theme/theme.module';
 
 import { StandardFieldsComponent } from './standardFields/standardFields.component';
 import { ValidationStatesComponent } from './validationStates/validationStates.component';
@@ -26,6 +26,7 @@ import { AlertModule, RatingModule, TabsModule } from 'ng2-bootstrap/ng2-bootstr
         FormsRoutingModule,
         CommonModule,
         FormsModule,
+        ThemeModule,
         AlertModule.forRoot(),
         RatingModule.forRoot()
     ],

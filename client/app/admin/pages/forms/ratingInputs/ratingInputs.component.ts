@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     moduleId: module.id,
-    templateUrl: './ratingInputs.html',
-    styleUrls: ['./ratingInputs.css']
+    templateUrl: './ratingInputs.html'
 })
 export class RatingInputsComponentt {
     public _rate1: number = 3;

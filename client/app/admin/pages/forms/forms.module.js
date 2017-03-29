@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var forms_component_1 = require("./forms.component");
+var theme_module_1 = require("../../theme/theme.module");
 var standardFields_component_1 = require("./standardFields/standardFields.component");
 var validationStates_component_1 = require("./validationStates/validationStates.component");
 var forms_routing_module_1 = require("./forms-routing.module");
@@ -33,6 +34,7 @@ FormscModule = __decorate([
             forms_routing_module_1.FormsRoutingModule,
             common_1.CommonModule,
             forms_1.FormsModule,
+            theme_module_1.ThemeModule,
             ng2_bootstrap_1.AlertModule.forRoot(),
             ng2_bootstrap_1.RatingModule.forRoot()
         ],

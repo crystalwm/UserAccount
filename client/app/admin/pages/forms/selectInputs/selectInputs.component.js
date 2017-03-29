@@ -16,8 +16,7 @@ SelectInputsComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'select-inputs',
-        templateUrl: './selectInputs.html',
-        styleUrls: ['./selectInputs.css']
+        templateUrl: './selectInputs.html'
     })
 ], SelectInputsComponent);
 exports.SelectInputsComponent = SelectInputsComponent;

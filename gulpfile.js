@@ -4,7 +4,10 @@ var gulp = require('gulp'),
     ts = require('gulp-typescript'),
     sourcemaps = require('gulp-sourcemaps'),
     clean = require('gulp-clean'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    moduleImporter = require('sass-module-importer'),
+    path = require('path');
+
 
 
 var src = {
@@ -93,7 +96,7 @@ function startWatchers() {
 
 gulp.task('sass', function() {
     return gulp.src(src.sass)
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({ importer: moduleImporter({ basedir: path.join(__dirname, 'node_modules') }) }).on('error', sass.logError))
         .pipe(gulp.dest('./client/'));
 });
 

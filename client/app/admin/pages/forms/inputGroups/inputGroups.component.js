@@ -16,8 +16,7 @@ InputGroupsComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'input-groups',
-        templateUrl: './inputGroups.html',
-        styleUrls: ['./inputGroups.css']
+        templateUrl: './inputGroups.html'
     })
 ], InputGroupsComponent);
 exports.InputGroupsComponent = InputGroupsComponent;

@@ -4,8 +4,8 @@ import { Component,ViewEncapsulation } from '@angular/core';
      moduleId: module.id,
     selector: 'pages',
     template: `
-        <header></header>
-        <sidebar></sidebar>  
+        <wm-header></wm-header>
+        <wm-sidebar></wm-sidebar>  
         <div class="main">
             <div class="content">
                  <router-outlet></router-outlet>

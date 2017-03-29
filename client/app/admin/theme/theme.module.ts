@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { WmHeaderComponent } from './components/wmHeader/wmHeader.component';
+import { WmSidebarComponent } from './components/wmSidebar/wmSidebar.component';
+import { WmCardComponent } from './components/wmCard/wmCard.component';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-    imports: [RouterModule],
-    declarations: [HeaderComponent, SidebarComponent],
-    exports: [HeaderComponent, SidebarComponent]
+    imports: [RouterModule, CommonModule],
+    declarations: [WmHeaderComponent, WmSidebarComponent, WmCardComponent],
+    exports: [WmHeaderComponent, WmSidebarComponent, WmCardComponent]
 })
 export class ThemeModule { }

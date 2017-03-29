@@ -7,12 +7,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var SidebarComponent = (function () {
-    function SidebarComponent() {
+var WmSidebarComponent = (function () {
+    function WmSidebarComponent() {
     }
-    return SidebarComponent;
+    return WmSidebarComponent;
 }());
-SidebarComponent = __decorate([
+WmSidebarComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'wm-sidebar',
@@ -20,6 +20,6 @@ SidebarComponent = __decorate([
         styleUrls: ['./sidebar.css'],
         encapsulation: core_1.ViewEncapsulation.None
     })
-], SidebarComponent);
-exports.SidebarComponent = SidebarComponent;
-//# sourceMappingURL=sidebar.component.js.map
+], WmSidebarComponent);
+exports.WmSidebarComponent = WmSidebarComponent;
+//# sourceMappingURL=wmSidebar.component.js.map

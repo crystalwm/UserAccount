@@ -1,0 +1,82 @@
+.form-control {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.help-block {
+    color: #fff;
+    vertical-align: sub;
+}
+
+.sub-little-text {
+    font-size: 12px;
+}
+
+.has-feedback {
+    .form-control {
+        padding-right: 42.5px;
+    }
+    label~.form-control-feedback {
+        top: 23px;
+        font-size: 18px;
+    }
+}
+
+.form-control-feedback {
+    margin-top: 10px;
+}
+
+.bootstrap-select {
+    .btn-default {
+        &:focus {
+            color: #fff;
+        }
+    }
+}
+
+.has-success .form-control-feedback {
+    color: #a2db59;
+}
+
+.has-warning .form-control-feedback {
+    color: #ecc839;
+}
+
+.has-error .form-control-feedback {
+    color: #fa758e;
+}
+
+.has-feedback .form-control {
+    padding-right: 42.5px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group-addon-primary {
+    background: #00abff;
+    color: #fff;
+    border-color: #00abff;
+}
+
+.input-group-addon-warning {
+    background: #e7ba08;
+    color: #fff;
+    border-color: #e7ba08;
+}
+
+.input-group-addon-success {
+    background: #8bd22f;
+    color: #fff;
+    border-color: #8bd22f;
+}
+
+select.form-control:not([multiple]) option {
+    color: #7d7d7d;
+}

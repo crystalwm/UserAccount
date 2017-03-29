@@ -3,5 +3,5 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./sidebar.component"));
+__export(require("./wmSidebar.component"));
 //# sourceMappingURL=index.js.map

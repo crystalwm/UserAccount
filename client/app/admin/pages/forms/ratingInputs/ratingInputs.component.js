@@ -22,8 +22,7 @@ var RatingInputsComponentt = (function () {
 RatingInputsComponentt = __decorate([
     core_1.Component({
         moduleId: module.id,
-        templateUrl: './ratingInputs.html',
-        styleUrls: ['./ratingInputs.css']
+        templateUrl: './ratingInputs.html'
     }),
     __metadata("design:paramtypes", [])
 ], RatingInputsComponentt);

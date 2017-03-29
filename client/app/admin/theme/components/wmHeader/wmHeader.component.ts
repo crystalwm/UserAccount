@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
      moduleId: module.id,
-    selector: 'header',
+    selector: 'wm-header',
     templateUrl: './header.html',
     styleUrls: ['./header.css']
 
 })
-export class HeaderComponent { }
+export class WmHeaderComponent { }
