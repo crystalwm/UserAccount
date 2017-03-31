@@ -11,6 +11,9 @@ import { FormsRoutingModule } from './forms-routing.module';
 import { InputGroupsComponent } from './inputGroups/inputGroups.component';
 import { RatingInputsComponentt } from './ratingInputs/ratingInputs.component';
 import { SelectInputsComponent } from './selectInputs/selectInputs.component';
+import { CheckBoxesAndRadiosComponent } from './checkBoxesAndRadios/checkBoxesAndRadios.component';
+
+
 
 import { LayoutBasciFormComponent } from './layoutBasicForm/layoutBascicForm.component';
 import { LayoutBlockFormComponent } from './layoutBlockForm/layoutBlockForm.component';
@@ -36,6 +39,7 @@ import { AlertModule, RatingModule, TabsModule } from 'ng2-bootstrap/ng2-bootstr
         InputGroupsComponent,
         RatingInputsComponentt,
         SelectInputsComponent,
+        CheckBoxesAndRadiosComponent,
         LayoutBasciFormComponent,
         LayoutBlockFormComponent,
         LayoutHorizontalForm,

@@ -14,6 +14,7 @@ var validationStates_component_1 = require("./validationStates/validationStates.
 var inputGroups_component_1 = require("./inputGroups/inputGroups.component");
 var ratingInputs_component_1 = require("./ratingInputs/ratingInputs.component");
 var selectInputs_component_1 = require("./selectInputs/selectInputs.component");
+var checkBoxesAndRadios_component_1 = require("./checkBoxesAndRadios/checkBoxesAndRadios.component");
 var layoutBascicForm_component_1 = require("./layoutBasicForm/layoutBascicForm.component");
 var layoutBlockForm_component_1 = require("./layoutBlockForm/layoutBlockForm.component");
 var layoutHorizontalForm_component_1 = require("./layoutHorizontalForm/layoutHorizontalForm.component");
@@ -30,6 +31,7 @@ var routeConfig = [
             { path: 'input-groups', component: inputGroups_component_1.InputGroupsComponent },
             { path: 'rating-inputs', component: ratingInputs_component_1.RatingInputsComponentt },
             { path: 'select-inputs', component: selectInputs_component_1.SelectInputsComponent },
+            { path: 'checkboxes-radios', component: checkBoxesAndRadios_component_1.CheckBoxesAndRadiosComponent },
             { path: 'layout-basci-form', component: layoutBascicForm_component_1.LayoutBasciFormComponent },
             { path: 'layout-block-form', component: layoutBlockForm_component_1.LayoutBlockFormComponent },
             { path: 'layout-inline-form', component: layoutHorizontalForm_component_1.LayoutHorizontalForm },

@@ -17,6 +17,7 @@ var forms_routing_module_1 = require("./forms-routing.module");
 var inputGroups_component_1 = require("./inputGroups/inputGroups.component");
 var ratingInputs_component_1 = require("./ratingInputs/ratingInputs.component");
 var selectInputs_component_1 = require("./selectInputs/selectInputs.component");
+var checkBoxesAndRadios_component_1 = require("./checkBoxesAndRadios/checkBoxesAndRadios.component");
 var layoutBascicForm_component_1 = require("./layoutBasicForm/layoutBascicForm.component");
 var layoutBlockForm_component_1 = require("./layoutBlockForm/layoutBlockForm.component");
 var layoutHorizontalForm_component_1 = require("./layoutHorizontalForm/layoutHorizontalForm.component");
@@ -44,6 +45,7 @@ FormscModule = __decorate([
             inputGroups_component_1.InputGroupsComponent,
             ratingInputs_component_1.RatingInputsComponentt,
             selectInputs_component_1.SelectInputsComponent,
+            checkBoxesAndRadios_component_1.CheckBoxesAndRadiosComponent,
             layoutBascicForm_component_1.LayoutBasciFormComponent,
             layoutBlockForm_component_1.LayoutBlockFormComponent,
             layoutHorizontalForm_component_1.LayoutHorizontalForm,

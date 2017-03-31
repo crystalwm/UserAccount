@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var wmHeader_component_1 = require("./components/wmHeader/wmHeader.component");
 var wmSidebar_component_1 = require("./components/wmSidebar/wmSidebar.component");
 var wmCard_component_1 = require("./components/wmCard/wmCard.component");
+var wmMenu_component_1 = require("./components/wmMenu/wmMenu.component");
 var router_1 = require("@angular/router");
 var common_1 = require("@angular/common");
 var ThemeModule = (function () {
@@ -20,8 +21,8 @@ var ThemeModule = (function () {
 ThemeModule = __decorate([
     core_1.NgModule({
         imports: [router_1.RouterModule, common_1.CommonModule],
-        declarations: [wmHeader_component_1.WmHeaderComponent, wmSidebar_component_1.WmSidebarComponent, wmCard_component_1.WmCardComponent],
-        exports: [wmHeader_component_1.WmHeaderComponent, wmSidebar_component_1.WmSidebarComponent, wmCard_component_1.WmCardComponent]
+        declarations: [wmHeader_component_1.WmHeaderComponent, wmSidebar_component_1.WmSidebarComponent, wmCard_component_1.WmCardComponent, wmMenu_component_1.WmMenuComponent],
+        exports: [wmHeader_component_1.WmHeaderComponent, wmSidebar_component_1.WmSidebarComponent, wmCard_component_1.WmCardComponent, wmMenu_component_1.WmMenuComponent]
     })
 ], ThemeModule);
 exports.ThemeModule = ThemeModule;

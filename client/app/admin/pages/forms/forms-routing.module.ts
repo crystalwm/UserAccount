@@ -8,6 +8,8 @@ import { ValidationStatesComponent } from './validationStates/validationStates.c
 import { InputGroupsComponent } from './inputGroups/inputGroups.component';
 import { RatingInputsComponentt } from './ratingInputs/ratingInputs.component';
 import { SelectInputsComponent } from './selectInputs/selectInputs.component';
+import { CheckBoxesAndRadiosComponent } from './checkBoxesAndRadios/checkBoxesAndRadios.component';
+
 
 import { LayoutBasciFormComponent } from './layoutBasicForm/layoutBascicForm.component';
 import { LayoutBlockFormComponent } from './layoutBlockForm/layoutBlockForm.component';
@@ -25,6 +27,7 @@ const routeConfig: Routes = [
       { path: 'input-groups', component: InputGroupsComponent },
       { path: 'rating-inputs', component: RatingInputsComponentt },
       { path: 'select-inputs', component: SelectInputsComponent },
+      { path: 'checkboxes-radios', component: CheckBoxesAndRadiosComponent },
       { path: 'layout-basci-form', component: LayoutBasciFormComponent },
       { path: 'layout-block-form', component: LayoutBlockFormComponent },
       { path: 'layout-inline-form', component: LayoutHorizontalForm },

@@ -24,6 +24,7 @@
             '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
             '@angular/material': 'npm:@angular/material/bundles/material.umd.js ',
             'moment': 'npm:moment/moment.js',
+            'jQuery': 'npm:jquery/dist/jquery.js',
             'ng2-bootstrap/ng2-bootstrap': 'npm:ng2-bootstrap/bundles/ng2-bootstrap.umd.js',
 
             // other libraries
