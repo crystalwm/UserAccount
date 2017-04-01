@@ -9,6 +9,7 @@ import { InputGroupsComponent } from './inputGroups/inputGroups.component';
 import { RatingInputsComponentt } from './ratingInputs/ratingInputs.component';
 import { SelectInputsComponent } from './selectInputs/selectInputs.component';
 import { CheckBoxesAndRadiosComponent } from './checkBoxesAndRadios/checkBoxesAndRadios.component';
+import { PictureUploaderComponent } from './pictureUploader/pictureUploader.component';
 
 
 import { LayoutBasciFormComponent } from './layoutBasicForm/layoutBascicForm.component';
@@ -28,10 +29,11 @@ const routeConfig: Routes = [
       { path: 'rating-inputs', component: RatingInputsComponentt },
       { path: 'select-inputs', component: SelectInputsComponent },
       { path: 'checkboxes-radios', component: CheckBoxesAndRadiosComponent },
+      { path: 'picture-uploader', component: PictureUploaderComponent },
       { path: 'layout-basci-form', component: LayoutBasciFormComponent },
       { path: 'layout-block-form', component: LayoutBlockFormComponent },
-      { path: 'layout-inline-form', component: LayoutHorizontalForm },
-      { path: 'layout-horizontal-form', component: LayoutInlineFormComponent },
+      { path: 'layout-inline-form', component: LayoutInlineFormComponent },
+      { path: 'layout-horizontal-form', component: LayoutHorizontalForm },
       { path: 'layout-without-lable-form', component: LayoutWithoutLabelsFormComponent },
       { path: '', redirectTo: 'validation-states', pathMatch: 'full' }
     ]

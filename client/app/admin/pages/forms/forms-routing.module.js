@@ -15,6 +15,7 @@ var inputGroups_component_1 = require("./inputGroups/inputGroups.component");
 var ratingInputs_component_1 = require("./ratingInputs/ratingInputs.component");
 var selectInputs_component_1 = require("./selectInputs/selectInputs.component");
 var checkBoxesAndRadios_component_1 = require("./checkBoxesAndRadios/checkBoxesAndRadios.component");
+var pictureUploader_component_1 = require("./pictureUploader/pictureUploader.component");
 var layoutBascicForm_component_1 = require("./layoutBasicForm/layoutBascicForm.component");
 var layoutBlockForm_component_1 = require("./layoutBlockForm/layoutBlockForm.component");
 var layoutHorizontalForm_component_1 = require("./layoutHorizontalForm/layoutHorizontalForm.component");
@@ -32,10 +33,11 @@ var routeConfig = [
             { path: 'rating-inputs', component: ratingInputs_component_1.RatingInputsComponentt },
             { path: 'select-inputs', component: selectInputs_component_1.SelectInputsComponent },
             { path: 'checkboxes-radios', component: checkBoxesAndRadios_component_1.CheckBoxesAndRadiosComponent },
+            { path: 'picture-uploader', component: pictureUploader_component_1.PictureUploaderComponent },
             { path: 'layout-basci-form', component: layoutBascicForm_component_1.LayoutBasciFormComponent },
             { path: 'layout-block-form', component: layoutBlockForm_component_1.LayoutBlockFormComponent },
-            { path: 'layout-inline-form', component: layoutHorizontalForm_component_1.LayoutHorizontalForm },
-            { path: 'layout-horizontal-form', component: layoutInlineForm_component_1.LayoutInlineFormComponent },
+            { path: 'layout-inline-form', component: layoutInlineForm_component_1.LayoutInlineFormComponent },
+            { path: 'layout-horizontal-form', component: layoutHorizontalForm_component_1.LayoutHorizontalForm },
             { path: 'layout-without-lable-form', component: layoutWithoutLabelsForm_component_1.LayoutWithoutLabelsFormComponent },
             { path: '', redirectTo: 'validation-states', pathMatch: 'full' }
         ]

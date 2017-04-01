@@ -26,7 +26,7 @@
             'moment': 'npm:moment/moment.js',
             'jQuery': 'npm:jquery/dist/jquery.js',
             'ng2-bootstrap/ng2-bootstrap': 'npm:ng2-bootstrap/bundles/ng2-bootstrap.umd.js',
-
+            'ngx-uploader': 'npm:ngx-uploader/bundle/ngx-uploader.umd.js',
             // other libraries
             'rxjs': 'npm:rxjs',
             'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',

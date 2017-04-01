@@ -18,12 +18,14 @@ var inputGroups_component_1 = require("./inputGroups/inputGroups.component");
 var ratingInputs_component_1 = require("./ratingInputs/ratingInputs.component");
 var selectInputs_component_1 = require("./selectInputs/selectInputs.component");
 var checkBoxesAndRadios_component_1 = require("./checkBoxesAndRadios/checkBoxesAndRadios.component");
+var pictureUploader_component_1 = require("./pictureUploader/pictureUploader.component");
 var layoutBascicForm_component_1 = require("./layoutBasicForm/layoutBascicForm.component");
 var layoutBlockForm_component_1 = require("./layoutBlockForm/layoutBlockForm.component");
 var layoutHorizontalForm_component_1 = require("./layoutHorizontalForm/layoutHorizontalForm.component");
 var layoutInlineForm_component_1 = require("./layoutInlineForm/layoutInlineForm.component");
 var layoutWithoutLabelsForm_component_1 = require("./layoutWithoutLabelsForm/layoutWithoutLabelsForm.component");
 var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
+var ngx_uploader_1 = require("ngx-uploader");
 var FormscModule = (function () {
     function FormscModule() {
     }
@@ -37,7 +39,8 @@ FormscModule = __decorate([
             forms_1.FormsModule,
             theme_module_1.ThemeModule,
             ng2_bootstrap_1.AlertModule.forRoot(),
-            ng2_bootstrap_1.RatingModule.forRoot()
+            ng2_bootstrap_1.RatingModule.forRoot(),
+            ngx_uploader_1.NgUploaderModule
         ],
         declarations: [forms_component_1.FormsComponent,
             validationStates_component_1.ValidationStatesComponent,
@@ -50,7 +53,8 @@ FormscModule = __decorate([
             layoutBlockForm_component_1.LayoutBlockFormComponent,
             layoutHorizontalForm_component_1.LayoutHorizontalForm,
             layoutInlineForm_component_1.LayoutInlineFormComponent,
-            layoutWithoutLabelsForm_component_1.LayoutWithoutLabelsFormComponent
+            layoutWithoutLabelsForm_component_1.LayoutWithoutLabelsFormComponent,
+            pictureUploader_component_1.PictureUploaderComponent
         ]
     })
 ], FormscModule);

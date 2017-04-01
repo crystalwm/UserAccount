@@ -12,6 +12,7 @@ import { InputGroupsComponent } from './inputGroups/inputGroups.component';
 import { RatingInputsComponentt } from './ratingInputs/ratingInputs.component';
 import { SelectInputsComponent } from './selectInputs/selectInputs.component';
 import { CheckBoxesAndRadiosComponent } from './checkBoxesAndRadios/checkBoxesAndRadios.component';
+import { PictureUploaderComponent } from './pictureUploader/pictureUploader.component';
 
 
 
@@ -21,6 +22,8 @@ import { LayoutHorizontalForm } from './layoutHorizontalForm/layoutHorizontalFor
 import { LayoutInlineFormComponent } from './layoutInlineForm/layoutInlineForm.component';
 import { LayoutWithoutLabelsFormComponent } from './layoutWithoutLabelsForm/layoutWithoutLabelsForm.component';
 import { AlertModule, RatingModule, TabsModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { NgUploaderModule } from 'ngx-uploader';
+
 
 
 
@@ -31,7 +34,8 @@ import { AlertModule, RatingModule, TabsModule } from 'ng2-bootstrap/ng2-bootstr
         FormsModule,
         ThemeModule,
         AlertModule.forRoot(),
-        RatingModule.forRoot()
+        RatingModule.forRoot(),
+        NgUploaderModule
     ],
     declarations: [FormsComponent,
         ValidationStatesComponent,
@@ -44,7 +48,8 @@ import { AlertModule, RatingModule, TabsModule } from 'ng2-bootstrap/ng2-bootstr
         LayoutBlockFormComponent,
         LayoutHorizontalForm,
         LayoutInlineFormComponent,
-        LayoutWithoutLabelsFormComponent
+        LayoutWithoutLabelsFormComponent,
+        PictureUploaderComponent
     ]
 
 })
