@@ -69,4 +69,18 @@
             </li>
         </ul>
     </li>
+    <li class="sidebar-list-item" title="Tables">
+        <a class="sidebar-list-link" href="" (click)="toggleMenu($event)" (mouseenter)="onHoverItem($event)">
+            <i class="ion-compose"></i>
+            <span>Tables</span>
+            <i class="ion-ios-arrow-down" [ngClass]="{'ion-ios-arrow-up': menuItem?.expanded}" aria-hidden="true"></i>
+        </a>
+        <ul class="sidebar-sublist">
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./tables/smart-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>smart-table</span>
+                </a>
+            </li>
+        </ul>
+    </li>
 </ul>

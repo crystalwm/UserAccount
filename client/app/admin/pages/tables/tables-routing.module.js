@@ -8,30 +8,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var pages_component_1 = require("./pages.component");
-var routeConfig = [
-    {
+var tables_component_1 = require("./tables.component");
+var smartTable_component_1 = require("./smartTable/smartTable.component");
+var routeConfig = [{
         path: '',
-        component: pages_component_1.PagesComponent,
+        component: tables_component_1.TablesComponent,
         children: [
-            { path: 'tables', loadChildren: 'client/app/admin/pages/tables/tables.module#TablesModule' },
-            { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormscModule' },
-            { path: '', redirectTo: 'forms', pathMatch: 'full' },
+            { path: 'smart-table', component: smartTable_component_1.SmartTableComponent },
+            { path: '', redirectTo: 'smart-table', pathMatch: 'full' }
         ]
+    }];
+var TableRoutingModule = (function () {
+    function TableRoutingModule() {
     }
-];
-var PagesRoutingModule = (function () {
-    function PagesRoutingModule() {
-    }
-    return PagesRoutingModule;
+    return TableRoutingModule;
 }());
-PagesRoutingModule = __decorate([
+TableRoutingModule = __decorate([
     core_1.NgModule({
         imports: [
             router_1.RouterModule.forChild(routeConfig)
         ],
         exports: [router_1.RouterModule]
     })
-], PagesRoutingModule);
-exports.PagesRoutingModule = PagesRoutingModule;
-//# sourceMappingURL=pages-routing.module.js.map
+], TableRoutingModule);
+exports.TableRoutingModule = TableRoutingModule;
+//# sourceMappingURL=tables-routing.module.js.map

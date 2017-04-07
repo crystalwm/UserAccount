@@ -4,10 +4,10 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FormsComponent } from './forms.component';
 import { ThemeModule } from '../../theme/theme.module';
+import { FormsRoutingModule } from './forms-routing.module';
 
 import { StandardFieldsComponent } from './standardFields/standardFields.component';
 import { ValidationStatesComponent } from './validationStates/validationStates.component';
-import { FormsRoutingModule } from './forms-routing.module';
 import { InputGroupsComponent } from './inputGroups/inputGroups.component';
 import { RatingInputsComponentt } from './ratingInputs/ratingInputs.component';
 import { SelectInputsComponent } from './selectInputs/selectInputs.component';
@@ -37,7 +37,8 @@ import { NgUploaderModule } from 'ngx-uploader';
         RatingModule.forRoot(),
         NgUploaderModule
     ],
-    declarations: [FormsComponent,
+    declarations: [
+        FormsComponent,
         ValidationStatesComponent,
         StandardFieldsComponent,
         InputGroupsComponent,

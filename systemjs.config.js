@@ -27,6 +27,10 @@
             'jQuery': 'npm:jquery/dist/jquery.js',
             'ng2-bootstrap/ng2-bootstrap': 'npm:ng2-bootstrap/bundles/ng2-bootstrap.umd.js',
             'ngx-uploader': 'npm:ngx-uploader/bundle/ngx-uploader.umd.js',
+            //smart-table
+            'ng2-smart-table': 'npm:ng2-smart-table/bundles/table.umd.js',
+            'ng2-completer': 'npm:ng2-completer/ng2-completer.umd.js',
+            'lodash': 'npm:lodash/lodash.js',
             // other libraries
             'rxjs': 'npm:rxjs',
             'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',

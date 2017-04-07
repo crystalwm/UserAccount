@@ -11,7 +11,6 @@ import { ThemeModule } from '../theme/theme.module';
         CommonModule,
         ThemeModule,
         PagesRoutingModule
-
     ],
     declarations: [PagesComponent]
 })

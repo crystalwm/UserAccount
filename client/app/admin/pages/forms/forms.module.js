@@ -11,9 +11,9 @@ var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var forms_component_1 = require("./forms.component");
 var theme_module_1 = require("../../theme/theme.module");
+var forms_routing_module_1 = require("./forms-routing.module");
 var standardFields_component_1 = require("./standardFields/standardFields.component");
 var validationStates_component_1 = require("./validationStates/validationStates.component");
-var forms_routing_module_1 = require("./forms-routing.module");
 var inputGroups_component_1 = require("./inputGroups/inputGroups.component");
 var ratingInputs_component_1 = require("./ratingInputs/ratingInputs.component");
 var selectInputs_component_1 = require("./selectInputs/selectInputs.component");
@@ -42,7 +42,8 @@ FormscModule = __decorate([
             ng2_bootstrap_1.RatingModule.forRoot(),
             ngx_uploader_1.NgUploaderModule
         ],
-        declarations: [forms_component_1.FormsComponent,
+        declarations: [
+            forms_component_1.FormsComponent,
             validationStates_component_1.ValidationStatesComponent,
             standardFields_component_1.StandardFieldsComponent,
             inputGroups_component_1.InputGroupsComponent,
