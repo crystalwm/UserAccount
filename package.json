@@ -47,6 +47,7 @@
     "lodash": "^4.17.3",
     "moment": "^2.18.1",
     "ng2-bootstrap": "^1.4.2",
+    "ng2-ckeditor": "^1.1.6",
     "ng2-smart-table": "^1.0.3",
     "ngx-uploader": "^2.2.5",
     "reflect-metadata": "^0.1.8",

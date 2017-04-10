@@ -16,6 +16,7 @@ var ratingInputs_component_1 = require("./ratingInputs/ratingInputs.component");
 var selectInputs_component_1 = require("./selectInputs/selectInputs.component");
 var checkBoxesAndRadios_component_1 = require("./checkBoxesAndRadios/checkBoxesAndRadios.component");
 var pictureUploader_component_1 = require("./pictureUploader/pictureUploader.component");
+var ckeditor_component_1 = require("./ckeditor/ckeditor.component");
 var layoutBascicForm_component_1 = require("./layoutBasicForm/layoutBascicForm.component");
 var layoutBlockForm_component_1 = require("./layoutBlockForm/layoutBlockForm.component");
 var layoutHorizontalForm_component_1 = require("./layoutHorizontalForm/layoutHorizontalForm.component");
@@ -34,6 +35,7 @@ var routeConfig = [
             { path: 'select-inputs', component: selectInputs_component_1.SelectInputsComponent },
             { path: 'checkboxes-radios', component: checkBoxesAndRadios_component_1.CheckBoxesAndRadiosComponent },
             { path: 'picture-uploader', component: pictureUploader_component_1.PictureUploaderComponent },
+            { path: 'ckeditor', component: ckeditor_component_1.CkeditorComponent },
             { path: 'layout-basci-form', component: layoutBascicForm_component_1.LayoutBasciFormComponent },
             { path: 'layout-block-form', component: layoutBlockForm_component_1.LayoutBlockFormComponent },
             { path: 'layout-inline-form', component: layoutInlineForm_component_1.LayoutInlineFormComponent },

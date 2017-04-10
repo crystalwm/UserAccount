@@ -19,13 +19,16 @@ var ratingInputs_component_1 = require("./ratingInputs/ratingInputs.component");
 var selectInputs_component_1 = require("./selectInputs/selectInputs.component");
 var checkBoxesAndRadios_component_1 = require("./checkBoxesAndRadios/checkBoxesAndRadios.component");
 var pictureUploader_component_1 = require("./pictureUploader/pictureUploader.component");
+var ckeditor_component_1 = require("./ckeditor/ckeditor.component");
 var layoutBascicForm_component_1 = require("./layoutBasicForm/layoutBascicForm.component");
 var layoutBlockForm_component_1 = require("./layoutBlockForm/layoutBlockForm.component");
 var layoutHorizontalForm_component_1 = require("./layoutHorizontalForm/layoutHorizontalForm.component");
 var layoutInlineForm_component_1 = require("./layoutInlineForm/layoutInlineForm.component");
 var layoutWithoutLabelsForm_component_1 = require("./layoutWithoutLabelsForm/layoutWithoutLabelsForm.component");
 var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
+//third part component
 var ngx_uploader_1 = require("ngx-uploader");
+var ng2_ckeditor_1 = require("ng2-ckeditor");
 var FormscModule = (function () {
     function FormscModule() {
     }
@@ -40,7 +43,8 @@ FormscModule = __decorate([
             theme_module_1.ThemeModule,
             ng2_bootstrap_1.AlertModule.forRoot(),
             ng2_bootstrap_1.RatingModule.forRoot(),
-            ngx_uploader_1.NgUploaderModule
+            ngx_uploader_1.NgUploaderModule,
+            ng2_ckeditor_1.CKEditorModule
         ],
         declarations: [
             forms_component_1.FormsComponent,
@@ -50,6 +54,7 @@ FormscModule = __decorate([
             ratingInputs_component_1.RatingInputsComponentt,
             selectInputs_component_1.SelectInputsComponent,
             checkBoxesAndRadios_component_1.CheckBoxesAndRadiosComponent,
+            ckeditor_component_1.CkeditorComponent,
             layoutBascicForm_component_1.LayoutBasciFormComponent,
             layoutBlockForm_component_1.LayoutBlockFormComponent,
             layoutHorizontalForm_component_1.LayoutHorizontalForm,

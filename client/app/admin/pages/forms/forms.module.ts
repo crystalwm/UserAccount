@@ -13,6 +13,7 @@ import { RatingInputsComponentt } from './ratingInputs/ratingInputs.component';
 import { SelectInputsComponent } from './selectInputs/selectInputs.component';
 import { CheckBoxesAndRadiosComponent } from './checkBoxesAndRadios/checkBoxesAndRadios.component';
 import { PictureUploaderComponent } from './pictureUploader/pictureUploader.component';
+import { CkeditorComponent } from './ckeditor/ckeditor.component';
 
 
 
@@ -22,7 +23,10 @@ import { LayoutHorizontalForm } from './layoutHorizontalForm/layoutHorizontalFor
 import { LayoutInlineFormComponent } from './layoutInlineForm/layoutInlineForm.component';
 import { LayoutWithoutLabelsFormComponent } from './layoutWithoutLabelsForm/layoutWithoutLabelsForm.component';
 import { AlertModule, RatingModule, TabsModule } from 'ng2-bootstrap/ng2-bootstrap';
+
+//third part component
 import { NgUploaderModule } from 'ngx-uploader';
+import { CKEditorModule } from 'ng2-ckeditor';
 
 
 
@@ -35,7 +39,8 @@ import { NgUploaderModule } from 'ngx-uploader';
         ThemeModule,
         AlertModule.forRoot(),
         RatingModule.forRoot(),
-        NgUploaderModule
+        NgUploaderModule,
+        CKEditorModule
     ],
     declarations: [
         FormsComponent,
@@ -45,6 +50,7 @@ import { NgUploaderModule } from 'ngx-uploader';
         RatingInputsComponentt,
         SelectInputsComponent,
         CheckBoxesAndRadiosComponent,
+        CkeditorComponent,
         LayoutBasciFormComponent,
         LayoutBlockFormComponent,
         LayoutHorizontalForm,

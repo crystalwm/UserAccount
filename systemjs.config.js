@@ -27,6 +27,8 @@
             'jQuery': 'npm:jquery/dist/jquery.js',
             'ng2-bootstrap/ng2-bootstrap': 'npm:ng2-bootstrap/bundles/ng2-bootstrap.umd.js',
             'ngx-uploader': 'npm:ngx-uploader/bundle/ngx-uploader.umd.js',
+            //forms
+            'ng2-ckeditor': 'npm:ng2-ckeditor',
             //smart-table
             'ng2-smart-table': 'npm:ng2-smart-table/bundles/table.umd.js',
             'ng2-completer': 'npm:ng2-completer/ng2-completer.umd.js',
@@ -50,6 +52,10 @@
             },
             'services': {
                 defaultExtension: 'js'
+            },
+            "ng2-ckeditor": {
+                "main": "lib/index.js",
+                "defaultExtension": "js",
             }
         }
     });

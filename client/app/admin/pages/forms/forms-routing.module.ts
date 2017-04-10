@@ -10,7 +10,7 @@ import { RatingInputsComponentt } from './ratingInputs/ratingInputs.component';
 import { SelectInputsComponent } from './selectInputs/selectInputs.component';
 import { CheckBoxesAndRadiosComponent } from './checkBoxesAndRadios/checkBoxesAndRadios.component';
 import { PictureUploaderComponent } from './pictureUploader/pictureUploader.component';
-
+import { CkeditorComponent } from './ckeditor/ckeditor.component';
 
 import { LayoutBasciFormComponent } from './layoutBasicForm/layoutBascicForm.component';
 import { LayoutBlockFormComponent } from './layoutBlockForm/layoutBlockForm.component';
@@ -30,6 +30,7 @@ const routeConfig: Routes = [
       { path: 'select-inputs', component: SelectInputsComponent },
       { path: 'checkboxes-radios', component: CheckBoxesAndRadiosComponent },
       { path: 'picture-uploader', component: PictureUploaderComponent },
+      { path: 'ckeditor', component: CkeditorComponent },
       { path: 'layout-basci-form', component: LayoutBasciFormComponent },
       { path: 'layout-block-form', component: LayoutBlockFormComponent },
       { path: 'layout-inline-form', component: LayoutInlineFormComponent },
