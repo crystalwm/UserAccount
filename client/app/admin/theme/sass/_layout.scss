@@ -11,22 +11,20 @@ main::before {
     z-index: 0;
 }
 
-::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: #fff;
-}
-
-:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #fff;
-}
-
+//placeholder color
 ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #fff;
+    color: #fff !important;
+}
+
+::-webkit-input-placeholder {
+    color: #fff !important;
 }
 
 :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: #fff;
+    color: #fff !important;
+}
+
+//algin
+.align-right {
+    text-align: right
 }

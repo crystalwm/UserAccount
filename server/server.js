@@ -1,6 +1,6 @@
 var koa = require('koa'),
-    render=require('koa-swig'),
-    path=require('path'),
+    render = require('koa-swig'),
+    path = require('path'),
     serve = require('koa-static'),
     router = require('koa-router')(),
     controller = require('./routes/controller.js'),
@@ -18,14 +18,13 @@ app.context.render = render({
 });
 
 
-
-    app
-        .use(session(app))
-        .use(serve(path.join(__dirname, '../build/public')))
-        .use(serve(path.join(__dirname, '../build'))) //public files
-        .use(router.routes())
-        .use(controller.routes())
-        .use(controller.allowedMethods());
+app
+    .use(session(app))
+    .use(serve(path.join(__dirname, '../build/public')))
+    .use(serve(path.join(__dirname, '../build'))) //public files
+    .use(router.routes())
+    .use(controller.routes())
+    .use(controller.allowedMethods());
 
 
 var fs = require('fs');
@@ -35,6 +34,6 @@ var options = {
     cert: fs.readFileSync(path + 'my-server.crt.pem')
 };
 require('https')
-    .createServer(options,app.callback()).listen(3002, function () {
-    console.log("app listening on port 3002");
-});
+    .createServer(options, app.callback()).listen(3002, function() {
+        console.log("app listening on port 3002");
+    });

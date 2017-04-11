@@ -1,0 +1,1 @@
+{"version":3,"file":"responsiveTable.component.js","sourceRoot":"","sources":["responsiveTable.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAAwC;AAOxC,IAAa,wBAAwB;IAArC;IAAsC,CAAC;IAAD,+BAAC;AAAD,CAAC,AAAvC,IAAuC;AAA1B,wBAAwB;IALpC,gBAAS,CAAC;QACP,QAAQ,EAAC,MAAM,CAAC,EAAE;QAClB,QAAQ,EAAC,kBAAkB;QAC3B,WAAW,EAAC,wBAAwB;KACvC,CAAC;GACW,wBAAwB,CAAE;AAA1B,4DAAwB"}

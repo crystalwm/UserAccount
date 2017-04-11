@@ -10,6 +10,20 @@ var core_1 = require("@angular/core");
 var SmartTableComponent = (function () {
     function SmartTableComponent() {
         this.settings = {
+            add: {
+                addButtonContent: '<i class="ion-ios-plus-outline"></i>',
+                createButtonContent: '<i class="ion-checkmark"></i>',
+                cancelButtonContent: '<i class="ion-close"></i>',
+            },
+            edit: {
+                editButtonContent: '<i class="ion-edit"></i>',
+                saveButtonContent: '<i class="ion-checkmark"></i>',
+                cancelButtonContent: '<i class="ion-close"></i>',
+            },
+            delete: {
+                deleteButtonContent: '<i class="ion-trash-a"></i>',
+                confirmDelete: true
+            },
             columns: {
                 id: { title: 'ID' },
                 name: { title: 'Full Name' },

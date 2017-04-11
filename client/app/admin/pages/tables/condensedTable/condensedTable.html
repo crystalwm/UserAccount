@@ -1,0 +1,21 @@
+<wm-card title="Condensed Table">
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>Browser</th>
+                <th class="align-right">Visits</th>
+                <th class="align-right">Purchases</th>
+                <th class="align-right">%</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of metricsTableData">
+
+                <td ngClass="nowrap">{{ item.browser }}</td>
+                <td class="align-right">{{ item.visits }}</td>
+                <td class="align-right">{{ item.purchases }}</td>
+                <td class="align-right">{{ item.percent }}</td>
+            </tr>
+        </tbody>
+    </table>
+</wm-card>

@@ -10,11 +10,24 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var tables_component_1 = require("./tables.component");
 var smartTable_component_1 = require("./smartTable/smartTable.component");
+//basice component
+var hoverRows_component_1 = require("./hoverRows/hoverRows.component");
+var borderedTable_component_1 = require("./borderedTable/borderedTable.component");
+var condensedTable_component_1 = require("./condensedTable/condensedTable.component");
+var stripedTable_component_1 = require("./stripedTable/stripedTable.component");
+var contextualRows_component_1 = require("./contextualRows/contextualRows.component");
+var responsiveTable_component_1 = require("./responsiveTable/responsiveTable.component");
 var routeConfig = [{
         path: '',
         component: tables_component_1.TablesComponent,
         children: [
             { path: 'smart-table', component: smartTable_component_1.SmartTableComponent },
+            { path: 'hover-rows', component: hoverRows_component_1.HoverRowsComponent },
+            { path: 'bordered-table', component: borderedTable_component_1.BorderedTableComponent },
+            { path: 'condensed-table', component: condensedTable_component_1.CondensedTableComponent },
+            { path: 'striped-table', component: stripedTable_component_1.StripedTableComponent },
+            { path: 'contextual-rows', component: contextualRows_component_1.ContextualRowsComponent },
+            { path: 'responsive-table', component: responsiveTable_component_1.ResponsiveTableComponent },
             { path: '', redirectTo: 'smart-table', pathMatch: 'full' }
         ]
     }];

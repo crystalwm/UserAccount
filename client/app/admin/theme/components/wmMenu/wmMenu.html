@@ -77,7 +77,7 @@
     </li>
     <li class="sidebar-list-item" title="Tables">
         <a class="sidebar-list-link" href="" (click)="toggleMenu($event)" (mouseenter)="onHoverItem($event)">
-            <i class="ion-compose"></i>
+            <i class="ion-document-text"></i>
             <span>Tables</span>
             <i class="ion-ios-arrow-down" [ngClass]="{'ion-ios-arrow-up': menuItem?.expanded}" aria-hidden="true"></i>
         </a>
@@ -85,6 +85,36 @@
             <li class="siderbar-sublist-item selected">
                 <a routerLink="./tables/smart-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
                     <span>smart-table</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./tables/hover-rows" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>hover-rows</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./tables/bordered-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>bordered-table</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./tables/condensed-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>condensed-table</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./tables/striped-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>striped-table</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./tables/contextual-rows" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>contextual-rows</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./tables/responsive-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>responsive-table</span>
                 </a>
             </li>
         </ul>
