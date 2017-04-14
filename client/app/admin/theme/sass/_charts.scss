@@ -1,0 +1,24 @@
+wm-chartist {
+    height: 300px;
+    /* width: 300px; */
+    display: block;
+    .ct-series-a .ct-area {
+        fill: #00abff;
+    }
+    .ct-series-a .ct-bar,
+    .ct-series-a .ct-line,
+    .ct-series-a .ct-point,
+    .ct-series-a .ct-slice-donut,
+    .ct-series-a .ct-slice-pie {
+        stroke: #00abff;
+    }
+    .ct-label {
+        color: #fff;
+        opacity: 0.9;
+        fill: #fff;
+    }
+    .ct-area {
+        fill-opacity: .5;
+        stroke: none;
+    }
+}

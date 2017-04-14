@@ -119,4 +119,59 @@
             </li>
         </ul>
     </li>
+    <li class="siderbar-list-item" title="Charts">
+        <a class="sidebar-list-link" href="" (click)="toggleMenu($event)" (mouseenter)="onHoverItem($event)">
+            <i class="ion-stats-bars"></i>
+            <span>Charts</span>
+            <i class="ion-ios-arrow-down" [ngClass]="{'ion-ios-arrow-up': menuItem?.expanded}" aria-hidden="true"></i>
+        </a>
+        <ul class="sidebar-sublist">
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./charts/linechart-simple" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>linechart-simple</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./charts/linechart-area" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>linechart-area</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./charts/linechart-bipolar" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>linechart-bipolar</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./charts/barchart-simple" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>barchart-simple</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./charts/barchart-multiline" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>barchart-multiline</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./charts/barchart-stecked" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>barchart-stecked</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./charts/pie-simple" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>pie-simple</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./charts/pie-lable" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>pie-lable</span>
+                </a>
+            </li>
+            <li class="siderbar-sublist-item selected">
+                <a routerLink="./charts/donut" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>donut</span>
+                </a>
+            </li>
+
+        </ul>
+    </li>
 </ul>

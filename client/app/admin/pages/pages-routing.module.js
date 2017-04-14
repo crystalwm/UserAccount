@@ -16,6 +16,7 @@ var routeConfig = [
         children: [
             { path: 'tables', loadChildren: 'client/app/admin/pages/tables/tables.module#TablesModule' },
             { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormscModule' },
+            { path: 'charts', loadChildren: 'client/app/admin/pages/charts/charts.module#ChartsModule' },
             { path: '', redirectTo: 'forms', pathMatch: 'full' },
         ]
     }

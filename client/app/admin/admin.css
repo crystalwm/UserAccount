@@ -331,6 +331,10 @@ nav.ng2-smart-pagination-nav {
 .table-arr {
   width: 5px;
   padding: 10px 8px 8px 0 !important; }
+  .table-arr i.ion-ios-arrow-thin-up {
+    color: chartreuse; }
+  .table-arr i.ion-ios-arrow-thin-down {
+    color: orangered; }
 
 .table-no-borders {
   border: none; }
@@ -586,6 +590,26 @@ th {
 
 .table-responsive {
   margin-top: 10px; }
+
+wm-chartist {
+  height: 300px;
+  /* width: 300px; */
+  display: block; }
+  wm-chartist .ct-series-a .ct-area {
+    fill: #00abff; }
+  wm-chartist .ct-series-a .ct-bar,
+  wm-chartist .ct-series-a .ct-line,
+  wm-chartist .ct-series-a .ct-point,
+  wm-chartist .ct-series-a .ct-slice-donut,
+  wm-chartist .ct-series-a .ct-slice-pie {
+    stroke: #00abff; }
+  wm-chartist .ct-label {
+    color: #fff;
+    opacity: 0.9;
+    fill: #fff; }
+  wm-chartist .ct-area {
+    fill-opacity: .5;
+    stroke: none; }
 
 /*!
   Ionicons, v2.0.1

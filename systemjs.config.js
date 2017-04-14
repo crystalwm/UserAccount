@@ -33,9 +33,13 @@
             'ng2-smart-table': 'npm:ng2-smart-table/bundles/table.umd.js',
             'ng2-completer': 'npm:ng2-completer/ng2-completer.umd.js',
             'lodash': 'npm:lodash/lodash.js',
+            //chartist
+            'chartist': 'npm:chartist/dist/chartist.js',
+            'ng-chartist': 'npm:ng-chartist/dist/ng-chartist.js',
             // other libraries
             'rxjs': 'npm:rxjs',
             'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
+
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {

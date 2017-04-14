@@ -1,14 +1,24 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 import { WmHeaderComponent } from './components/wmHeader/wmHeader.component';
 import { WmSidebarComponent } from './components/wmSidebar/wmSidebar.component';
 import { WmCardComponent } from './components/wmCard/wmCard.component';
 import { WmMenuComponent } from './components/wmMenu/wmMenu.component';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { WmChartistComponent } from './components/wmChartist/wmChartist.component';
 
 @NgModule({
     imports: [RouterModule, CommonModule],
-    declarations: [WmHeaderComponent, WmSidebarComponent, WmCardComponent, WmMenuComponent],
-    exports: [WmHeaderComponent, WmSidebarComponent, WmCardComponent, WmMenuComponent]
+    declarations: [
+        WmHeaderComponent, WmSidebarComponent,
+        WmCardComponent, WmMenuComponent,
+        WmChartistComponent
+    ],
+    exports: [
+        WmHeaderComponent, WmSidebarComponent,
+        WmCardComponent, WmMenuComponent,
+        WmChartistComponent
+    ]
 })
 export class ThemeModule { }
