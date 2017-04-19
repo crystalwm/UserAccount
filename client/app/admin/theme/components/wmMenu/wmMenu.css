@@ -16,7 +16,7 @@ li.sidebar-list-item {
     padding-left: 14px;
 }
 
-li.siderbar-sublist-item.selected {
+ul.sidebar-list li.selected {
     border: none;
     background-color: #00abff;
 }

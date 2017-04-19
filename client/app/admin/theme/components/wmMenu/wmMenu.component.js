@@ -13,25 +13,37 @@ var core_1 = require("@angular/core");
 var WmMenuComponent = (function () {
     function WmMenuComponent() {
         this.sidebarCollapsed = false;
-        this.menuItem = { expanded: false };
+        this.menuItemForm = { expanded: false };
+        this.menuItemTable = { expanded: false };
+        this.menuItemChart = { expanded: false };
     }
     WmMenuComponent.prototype.onHoverItem = function ($event) {
     };
-    WmMenuComponent.prototype.toggleMenu = function ($event) {
+    WmMenuComponent.prototype.toggleMenu = function ($event, menuItem) {
         var $submenu = jQuery($event.currentTarget).next();
         $event.preventDefault();
         if (this.sidebarCollapsed) {
         }
         else {
             //submenu.slideToggle();
-            this.menuItem.expanded = !this.menuItem.expanded;
+            menuItem.expanded = !menuItem.expanded;
             $submenu.toggle();
         }
         return false;
     };
     WmMenuComponent.prototype.toggleSubMenu = function ($event) {
         var menu = jQuery($event.currentTarget);
-        menu.parent().siblings().removeClass('selected');
+        var $lis = jQuery('.sidebar-list li');
+        // $lis.each(element => {
+        //     if(jQuery(element).hasClass('selected')){
+        //         jQuery(element).removeClass('selected');
+        //     }
+        // });
+        for (var i = 0; i < $lis.length; i++) {
+            if (jQuery($lis[i]).hasClass('selected')) {
+                jQuery($lis[i]).removeClass('selected');
+            }
+        }
         menu.parent().addClass('selected');
     };
     return WmMenuComponent;
@@ -43,7 +55,15 @@ __decorate([
 __decorate([
     core_1.Input(),
     __metadata("design:type", Object)
-], WmMenuComponent.prototype, "menuItem", void 0);
+], WmMenuComponent.prototype, "menuItemForm", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], WmMenuComponent.prototype, "menuItemTable", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], WmMenuComponent.prototype, "menuItemChart", void 0);
 WmMenuComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
