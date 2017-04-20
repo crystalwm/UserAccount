@@ -1,16 +1,31 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input,OnInit } from '@angular/core';
+
+import {MenuService} from './menu.service';
+
 @Component({
     moduleId: module.id,
     selector: 'wm-menu',
-    templateUrl: './wmMenu.html',
+    templateUrl: './wmMenuC.html',
     styleUrls: ['./wmMenu.css']
 })
-export class WmMenuComponent {
+export class WmMenuComponent implements OnInit{
     @Input() sidebarCollapsed: boolean = false;
     @Input() menuItemForm: any = { expanded: false };
     @Input() menuItemTable: any = { expanded: false };
     @Input() menuItemChart: any = { expanded: false };
+    @Input() menus:any=[];
 
+
+    constructor(
+        private menuService:MenuService
+    ){}
+       
+    ngOnInit(){
+        this.menuService.getMenus().then(menus=>{
+            this.menus=menus;
+            console.log(this.menus);
+        });
+    }
 
 
     public onHoverItem($event): void {

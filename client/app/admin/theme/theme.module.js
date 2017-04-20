@@ -14,6 +14,8 @@ var wmSidebar_component_1 = require("./components/wmSidebar/wmSidebar.component"
 var wmCard_component_1 = require("./components/wmCard/wmCard.component");
 var wmMenu_component_1 = require("./components/wmMenu/wmMenu.component");
 var wmChartist_component_1 = require("./components/wmChartist/wmChartist.component");
+//provider
+var menu_service_1 = require("./components/wmMenu/menu.service");
 var ThemeModule = (function () {
     function ThemeModule() {
     }
@@ -27,6 +29,7 @@ ThemeModule = __decorate([
             wmCard_component_1.WmCardComponent, wmMenu_component_1.WmMenuComponent,
             wmChartist_component_1.WmChartistComponent
         ],
+        providers: [menu_service_1.MenuService],
         exports: [
             wmHeader_component_1.WmHeaderComponent, wmSidebar_component_1.WmSidebarComponent,
             wmCard_component_1.WmCardComponent, wmMenu_component_1.WmMenuComponent,

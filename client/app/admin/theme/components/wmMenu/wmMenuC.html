@@ -1,0 +1,19 @@
+<ul *ngIf="menus.length>0">
+    <li *ngFor="let menuitem of menus" class="sidebar-list-item" title="menuitem.data.menu.title">
+        <a class="sidebar-list-link" href="" (click)="toggleMenu($event,menuitem)" (mouseenter)="onHoverItem($event)">
+            <i [class]="menuitem.data.menu.icon"></i>
+            <span>{{menuitem.data.menu.title}}</span>
+
+            <i *ngIf="menuitem.data.children" class="ion-ios-arrow-down" [ngClass]="{'ion-ios-arrow-up': menuitem?.expanded}" aria-hidden="true"></i>
+        </a>
+
+        <ul *ngIf="menuitem.data.children" class="sidebar-sublist">
+            <li *ngFor="let subMenu of menuitem.data.children">
+                <a routerLink="{{'./' + menuitem.path+'/'+subMenu.path}}" class="sidebar-list-link" (click)="toggleSubMenu($event)">
+                    <span>{{subMenu.data.menu.title}}</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+</ul>

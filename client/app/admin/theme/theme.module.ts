@@ -8,6 +8,9 @@ import { WmCardComponent } from './components/wmCard/wmCard.component';
 import { WmMenuComponent } from './components/wmMenu/wmMenu.component';
 import { WmChartistComponent } from './components/wmChartist/wmChartist.component';
 
+//provider
+import {MenuService} from './components/wmMenu/menu.service';
+
 @NgModule({
     imports: [RouterModule, CommonModule],
     declarations: [
@@ -15,6 +18,7 @@ import { WmChartistComponent } from './components/wmChartist/wmChartist.componen
         WmCardComponent, WmMenuComponent,
         WmChartistComponent
     ],
+    providers:[MenuService],
     exports: [
         WmHeaderComponent, WmSidebarComponent,
         WmCardComponent, WmMenuComponent,

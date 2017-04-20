@@ -10,13 +10,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var menu_service_1 = require("./menu.service");
 var WmMenuComponent = (function () {
-    function WmMenuComponent() {
+    function WmMenuComponent(menuService) {
+        this.menuService = menuService;
         this.sidebarCollapsed = false;
         this.menuItemForm = { expanded: false };
         this.menuItemTable = { expanded: false };
         this.menuItemChart = { expanded: false };
+        this.menus = [];
     }
+    WmMenuComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.menuService.getMenus().then(function (menus) {
+            _this.menus = menus;
+            console.log(_this.menus);
+        });
+    };
     WmMenuComponent.prototype.onHoverItem = function ($event) {
     };
     WmMenuComponent.prototype.toggleMenu = function ($event, menuItem) {
@@ -64,13 +74,18 @@ __decorate([
     core_1.Input(),
     __metadata("design:type", Object)
 ], WmMenuComponent.prototype, "menuItemChart", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], WmMenuComponent.prototype, "menus", void 0);
 WmMenuComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'wm-menu',
-        templateUrl: './wmMenu.html',
+        templateUrl: './wmMenuC.html',
         styleUrls: ['./wmMenu.css']
-    })
+    }),
+    __metadata("design:paramtypes", [menu_service_1.MenuService])
 ], WmMenuComponent);
 exports.WmMenuComponent = WmMenuComponent;
 //# sourceMappingURL=wmMenu.component.js.map
