@@ -37,7 +37,7 @@ var WmMenuComponent = (function () {
         else {
             //submenu.slideToggle();
             menuItem.expanded = !menuItem.expanded;
-            $submenu.toggle();
+            //    $submenu.toggle();
         }
         return false;
     };
@@ -82,7 +82,7 @@ WmMenuComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'wm-menu',
-        templateUrl: './wmMenuC.html',
+        templateUrl: './wmMenu.html',
         styleUrls: ['./wmMenu.css']
     }),
     __metadata("design:paramtypes", [menu_service_1.MenuService])

@@ -1,183 +1,30 @@
-<ul class="sidebar-list">
-    <li class="sidebar-list-item" title="Dashboard">
-        <a class="sidebar-list-link" href="" (click)="toggleSubMenu($event)" (mouseenter)="onHoverItem($event)" routerLink="./dashboard">
-            <i class="ion-home"></i>
-            <span>Dashboard</span>
-        </a>
-    </li>
-    <li class="sidebar-list-item" title="Forms">
-        <a class="sidebar-list-link" href="" (click)="toggleMenu($event,menuItemForm)" (mouseenter)="onHoverItem($event)">
-            <i class="ion-compose"></i>
-            <span>Forms</span>
-            <i class="ion-ios-arrow-down" [ngClass]="{'ion-ios-arrow-up': menuItemForm?.expanded}" aria-hidden="true"></i>
-        </a>
-        <ul class="sidebar-sublist">
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/standard-fields" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>standard-fields</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/validation-states" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>validation-states</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/input-groups" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>input-groups</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/rating-inputs" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>rating-inputs</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/select-inputs" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>select-inputs</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/checkboxes-radios" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>checkboxes-radios</span>
-                </a>
-            </li>
+<ul *ngIf="menus.length>0" class="sidebar-list">
+    <li *ngFor="let menuitem of menus" class="sidebar-list-item" title="menuitem.data.menu.title">
 
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/picture-uploader" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>picture-uploader</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/ckeditor" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>ckeditor</span>
-                </a>
-            </li>
+        <div *ngIf="menuitem.data.children;then content else other_content"></div>
 
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/layout-basci-form" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>layout-basci-form</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/layout-block-form" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>layout-block-form</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/layout-inline-form" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>layout-inline-form</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/layout-horizontal-form" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>layout-horizontal-form</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./forms/layout-without-lable-form" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>layout-without-lable-form</span>
+        <ng-template #content>
+            <a class="sidebar-list-link" href="" (click)="toggleMenu($event,menuitem)" (mouseenter)="onHoverItem($event)">
+                <i [class]="menuitem.data.menu.icon"></i>
+                <span>{{menuitem.data.menu.title}}</span>
+                <i class="ion-ios-arrow-down" [ngClass]="{'ion-ios-arrow-up': menuitem?.expanded}" aria-hidden="true"></i>
+            </a>
+        </ng-template>
+        <ng-template #other_content>
+            <a routerLink="{{'./' + menuitem.path}}" class="sidebar-list-link" href="" (click)="toggleMenu($event,menuitem)" (mouseenter)="onHoverItem($event)">
+                <i [class]="menuitem.data.menu.icon"></i>
+                <span>{{menuitem.data.menu.title}}</span>
+            </a>
+        </ng-template>
+
+
+        <ul *ngIf="menuitem.data.children" class="sidebar-sublist">
+            <li *ngFor="let subMenu of menuitem.data.children" [style.display]="menuitem?.expanded ? 'block': 'none' ">
+                <a [routerLink]=" './' + menuitem.path+ '/'+subMenu.path " class="sidebar-list-link " (click)="toggleSubMenu($event) ">
+                    <span>{{subMenu.data.menu.title}}</span>
                 </a>
             </li>
         </ul>
     </li>
-    <li class="sidebar-list-item" title="Tables">
-        <a class="sidebar-list-link" href="" (click)="toggleMenu($event,menuItemTable)" (mouseenter)="onHoverItem($event)">
-            <i class="ion-document-text"></i>
-            <span>Tables</span>
-            <i class="ion-ios-arrow-down" [ngClass]="{'ion-ios-arrow-up': menuItemTable?.expanded}" aria-hidden="true"></i>
-        </a>
-        <ul class="sidebar-sublist">
-            <li class="siderbar-sublist-item">
-                <a routerLink="./tables/smart-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>smart-table</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./tables/hover-rows" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>hover-rows</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./tables/bordered-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>bordered-table</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./tables/condensed-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>condensed-table</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./tables/striped-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>striped-table</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./tables/contextual-rows" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>contextual-rows</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./tables/responsive-table" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>responsive-table</span>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li class="siderbar-list-item" title="Charts">
-        <a class="sidebar-list-link" href="" (click)="toggleMenu($event,menuItemChart)" (mouseenter)="onHoverItem($event)">
-            <i class="ion-stats-bars"></i>
-            <span>Charts</span>
-            <i class="ion-ios-arrow-down" [ngClass]="{'ion-ios-arrow-up': menuItemChart?.expanded}" aria-hidden="true"></i>
-        </a>
-        <ul class="sidebar-sublist">
-            <li class="siderbar-sublist-item">
-                <a routerLink="./charts/linechart-simple" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>linechart-simple</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./charts/linechart-area" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>linechart-area</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./charts/linechart-bipolar" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>linechart-bipolar</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./charts/barchart-simple" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>barchart-simple</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./charts/barchart-multiline" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>barchart-multiline</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./charts/barchart-stecked" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>barchart-stecked</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./charts/pie-simple" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>pie-simple</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./charts/pie-lable" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>pie-lable</span>
-                </a>
-            </li>
-            <li class="siderbar-sublist-item">
-                <a routerLink="./charts/donut" class="sidebar-list-link" (click)="toggleSubMenu($event)">
-                    <span>donut</span>
-                </a>
-            </li>
 
-        </ul>
-    </li>
 </ul>

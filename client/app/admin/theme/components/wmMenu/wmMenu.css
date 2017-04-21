@@ -54,6 +54,10 @@ li.siderbar-sublist-item {
     padding: 0;
 }
 
+.sidebar-sublist .sidebar-list-link span {
+    padding-left: 17px;
+}
+
 a.sidebar-list-link:hover {
     color: #00abff;
 }
@@ -74,4 +78,8 @@ i.ion-ios-arrow-up {
     right: 5px;
     font-size: 17px;
     top: 9px;
+}
+
+.slide-right {
+    display: none;
 }

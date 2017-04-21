@@ -5,7 +5,7 @@ import {MenuService} from './menu.service';
 @Component({
     moduleId: module.id,
     selector: 'wm-menu',
-    templateUrl: './wmMenuC.html',
+    templateUrl: './wmMenu.html',
     styleUrls: ['./wmMenu.css']
 })
 export class WmMenuComponent implements OnInit{
@@ -43,7 +43,7 @@ export class WmMenuComponent implements OnInit{
         } else {
             //submenu.slideToggle();
             menuItem.expanded = !menuItem.expanded;
-            $submenu.toggle();
+        //    $submenu.toggle();
         }
         return false;
     }
