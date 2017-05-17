@@ -20,4 +20,4 @@ StandardFieldsComponent = __decorate([
     })
 ], StandardFieldsComponent);
 exports.StandardFieldsComponent = StandardFieldsComponent;
-//# sourceMappingURL=standardFields.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/forms/standardFields/standardFields.component.js.map

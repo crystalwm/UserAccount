@@ -55,4 +55,4 @@ ChartsModule = __decorate([
     })
 ], ChartsModule);
 exports.ChartsModule = ChartsModule;
-//# sourceMappingURL=charts.module.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/charts/charts.module.js.map

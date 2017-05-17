@@ -22,4 +22,4 @@ WmSidebarComponent = __decorate([
     })
 ], WmSidebarComponent);
 exports.WmSidebarComponent = WmSidebarComponent;
-//# sourceMappingURL=wmSidebar.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/theme/components/wmSidebar/wmSidebar.component.js.map

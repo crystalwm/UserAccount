@@ -24,4 +24,4 @@ LayoutBlockFormComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], LayoutBlockFormComponent);
 exports.LayoutBlockFormComponent = LayoutBlockFormComponent;
-//# sourceMappingURL=layoutBlockForm.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/forms/layoutBlockForm/layoutBlockForm.component.js.map

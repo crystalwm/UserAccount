@@ -39,4 +39,4 @@ AdminRoutingModule = __decorate([
     })
 ], AdminRoutingModule);
 exports.AdminRoutingModule = AdminRoutingModule;
-//# sourceMappingURL=admin-routing.module.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/admin-routing.module.js.map

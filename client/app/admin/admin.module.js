@@ -26,4 +26,4 @@ AdminModule = __decorate([
     })
 ], AdminModule);
 exports.AdminModule = AdminModule;
-//# sourceMappingURL=admin.module.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/admin.module.js.map

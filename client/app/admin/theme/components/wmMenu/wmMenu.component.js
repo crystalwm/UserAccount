@@ -88,4 +88,4 @@ WmMenuComponent = __decorate([
     __metadata("design:paramtypes", [menu_service_1.MenuService])
 ], WmMenuComponent);
 exports.WmMenuComponent = WmMenuComponent;
-//# sourceMappingURL=wmMenu.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/theme/components/wmMenu/wmMenu.component.js.map

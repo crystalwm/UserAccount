@@ -36,6 +36,7 @@
             //chartist
             'chartist': 'npm:chartist/dist/chartist.js',
             'ng-chartist': 'npm:ng-chartist/dist/ng-chartist.js',
+            'd3': 'npm:d3/build/d3.min.js',
             // other libraries
             'rxjs': 'npm:rxjs',
             'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',

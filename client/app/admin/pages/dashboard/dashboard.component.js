@@ -20,4 +20,4 @@ DashboardComponent = __decorate([
     })
 ], DashboardComponent);
 exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=dashboard.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/dashboard/dashboard.component.js.map

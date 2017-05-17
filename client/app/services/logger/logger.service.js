@@ -21,4 +21,4 @@ LoggerService = __decorate([
     core_1.Injectable()
 ], LoggerService);
 exports.LoggerService = LoggerService;
-//# sourceMappingURL=logger.service.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/services/logger/logger.service.js.map

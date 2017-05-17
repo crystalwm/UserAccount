@@ -45,4 +45,4 @@ TableRoutingModule = __decorate([
     })
 ], TableRoutingModule);
 exports.TableRoutingModule = TableRoutingModule;
-//# sourceMappingURL=tables-routing.module.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/tables/tables-routing.module.js.map

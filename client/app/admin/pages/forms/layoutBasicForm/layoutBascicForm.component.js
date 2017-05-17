@@ -25,4 +25,4 @@ LayoutBasciFormComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], LayoutBasciFormComponent);
 exports.LayoutBasciFormComponent = LayoutBasciFormComponent;
-//# sourceMappingURL=layoutBascicForm.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/forms/layoutBasicForm/layoutBascicForm.component.js.map

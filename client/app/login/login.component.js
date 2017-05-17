@@ -46,4 +46,4 @@ LoginComponent = __decorate([
         router_1.Router])
 ], LoginComponent);
 exports.LoginComponent = LoginComponent;
-//# sourceMappingURL=login.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/login/login.component.js.map

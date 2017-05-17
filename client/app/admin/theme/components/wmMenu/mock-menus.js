@@ -272,6 +272,27 @@ exports.PAGES_MENU = [{
                 }
             ]
         }
+    }, {
+        path: 'd3demos',
+        data: {
+            menu: {
+                title: 'D3Demos',
+                icon: 'ion-home',
+                selected: false,
+                expended: false,
+                order: 400
+            },
+            children: [
+                {
+                    path: 'hubble-law',
+                    data: {
+                        menu: {
+                            title: 'hubble-law'
+                        }
+                    }
+                }
+            ]
+        }
     }
 ];
-//# sourceMappingURL=mock-menus.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/theme/components/wmMenu/mock-menus.js.map

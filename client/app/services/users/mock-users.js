@@ -7,4 +7,4 @@ exports.USERS = [
     { name: 'cici', password: 'cici' },
     { name: 'crystal', password: 'crystal' }
 ];
-//# sourceMappingURL=mock-users.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/services/users/mock-users.js.map

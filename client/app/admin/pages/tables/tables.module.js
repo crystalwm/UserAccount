@@ -48,4 +48,4 @@ TablesModule = __decorate([
     })
 ], TablesModule);
 exports.TablesModule = TablesModule;
-//# sourceMappingURL=tables.module.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/tables/tables.module.js.map

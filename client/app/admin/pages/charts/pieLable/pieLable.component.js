@@ -29,4 +29,4 @@ PieLableComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], PieLableComponent);
 exports.PieLableComponent = PieLableComponent;
-//# sourceMappingURL=pieLable.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/charts/pieLable/pieLable.component.js.map

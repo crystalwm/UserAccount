@@ -12,4 +12,4 @@ require("jquery");
 require('../node_modules/bootstrap/dist/css/bootstrap.css');
 require("bootstrap/dist/js/bootstrap.js");
 require("rxjs");
-//# sourceMappingURL=vendor.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/vendor.js.map

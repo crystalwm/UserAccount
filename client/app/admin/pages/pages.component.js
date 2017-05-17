@@ -22,4 +22,4 @@ PagesComponent = __decorate([
     })
 ], PagesComponent);
 exports.PagesComponent = PagesComponent;
-//# sourceMappingURL=pages.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/pages.component.js.map

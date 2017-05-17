@@ -18,6 +18,7 @@ var routeConfig = [
             { path: 'tables', loadChildren: 'client/app/admin/pages/tables/tables.module#TablesModule' },
             { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormscModule' },
             { path: 'charts', loadChildren: 'client/app/admin/pages/charts/charts.module#ChartsModule' },
+            { path: 'd3demos', loadChildren: 'client/app/admin/pages/D3Demos/d3Demos.module#D3DemosModule' },
             { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
         ]
     }
@@ -36,4 +37,4 @@ PagesRoutingModule = __decorate([
     })
 ], PagesRoutingModule);
 exports.PagesRoutingModule = PagesRoutingModule;
-//# sourceMappingURL=pages-routing.module.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/pages-routing.module.js.map

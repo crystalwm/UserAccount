@@ -68,4 +68,4 @@ PictureUploaderComponent = __decorate([
     __metadata("design:paramtypes", [core_1.NgZone])
 ], PictureUploaderComponent);
 exports.PictureUploaderComponent = PictureUploaderComponent;
-//# sourceMappingURL=pictureUploader.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/forms/pictureUploader/pictureUploader.component.js.map

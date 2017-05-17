@@ -28,14 +28,14 @@ export const PAGES_MENU: any = [{
                         title: 'standard-fields'
                     }
                 }
-            },{
+            }, {
                 path: 'validation-states',
                 data: {
                     menu: {
                         title: 'validation-states'
                     }
                 }
-            },{
+            }, {
                 path: 'input-groups',
                 data: {
                     menu: {
@@ -292,5 +292,27 @@ export const PAGES_MENU: any = [{
 
         ]
     }
+}, {
+    path: 'd3demos',
+    data: {
+        menu: {
+            title: 'D3Demos',
+            icon: 'ion-home',
+            selected: false,
+            expended: false,
+            order: 400
+        },
+        children: [
+            {
+                path: 'hubble-law',
+                data: {
+                    menu: {
+                        title: 'hubble-law'
+                    }
+                }
+            }
+        ]
+    }
+
 }
 ];

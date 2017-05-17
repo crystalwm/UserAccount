@@ -20,4 +20,4 @@ MenuService = __decorate([
     core_1.Injectable()
 ], MenuService);
 exports.MenuService = MenuService;
-//# sourceMappingURL=menu.service.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/theme/components/wmMenu/menu.service.js.map

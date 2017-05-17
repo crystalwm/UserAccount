@@ -29,4 +29,4 @@ BarChartSimpleComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], BarChartSimpleComponent);
 exports.BarChartSimpleComponent = BarChartSimpleComponent;
-//# sourceMappingURL=barChartSimple.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/charts/barChartSimple/barChartSimple.component.js.map

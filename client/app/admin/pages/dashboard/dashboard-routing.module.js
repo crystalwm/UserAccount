@@ -27,4 +27,4 @@ DashboardRoutingModule = __decorate([
     })
 ], DashboardRoutingModule);
 exports.DashboardRoutingModule = DashboardRoutingModule;
-//# sourceMappingURL=dashboard-routing.module.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/dashboard/dashboard-routing.module.js.map

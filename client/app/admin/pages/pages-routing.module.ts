@@ -14,6 +14,7 @@ const routeConfig: Routes = [
             { path: 'tables', loadChildren: 'client/app/admin/pages/tables/tables.module#TablesModule' },
             { path: 'forms', loadChildren: 'client/app/admin/pages/forms/forms.module#FormscModule' },
             { path: 'charts', loadChildren: 'client/app/admin/pages/charts/charts.module#ChartsModule' },
+            { path: 'd3demos', loadChildren: 'client/app/admin/pages/D3Demos/d3Demos.module#D3DemosModule' },
             { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
 
         ]

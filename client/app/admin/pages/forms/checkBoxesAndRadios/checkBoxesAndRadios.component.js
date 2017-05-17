@@ -19,4 +19,4 @@ CheckBoxesAndRadiosComponent = __decorate([
     })
 ], CheckBoxesAndRadiosComponent);
 exports.CheckBoxesAndRadiosComponent = CheckBoxesAndRadiosComponent;
-//# sourceMappingURL=checkBoxesAndRadios.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/forms/checkBoxesAndRadios/checkBoxesAndRadios.component.js.map

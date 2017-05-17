@@ -29,4 +29,4 @@ DonutComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], DonutComponent);
 exports.DonutComponent = DonutComponent;
-//# sourceMappingURL=donut.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/charts/donut/donut.component.js.map

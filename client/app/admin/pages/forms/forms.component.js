@@ -20,4 +20,4 @@ FormsComponent = __decorate([
     })
 ], FormsComponent);
 exports.FormsComponent = FormsComponent;
-//# sourceMappingURL=forms.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/forms/forms.component.js.map

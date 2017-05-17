@@ -20,4 +20,4 @@ SelectInputsComponent = __decorate([
     })
 ], SelectInputsComponent);
 exports.SelectInputsComponent = SelectInputsComponent;
-//# sourceMappingURL=selectInputs.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/forms/selectInputs/selectInputs.component.js.map

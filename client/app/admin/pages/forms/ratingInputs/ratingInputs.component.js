@@ -27,4 +27,4 @@ RatingInputsComponentt = __decorate([
     __metadata("design:paramtypes", [])
 ], RatingInputsComponentt);
 exports.RatingInputsComponentt = RatingInputsComponentt;
-//# sourceMappingURL=ratingInputs.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/forms/ratingInputs/ratingInputs.component.js.map

@@ -29,4 +29,4 @@ PieSimpleComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], PieSimpleComponent);
 exports.PieSimpleComponent = PieSimpleComponent;
-//# sourceMappingURL=pieSimple.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/charts/pieSimple/pieSimple.component.js.map

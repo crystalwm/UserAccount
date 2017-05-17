@@ -20,4 +20,4 @@ ChartsComponent = __decorate([
     })
 ], ChartsComponent);
 exports.ChartsComponent = ChartsComponent;
-//# sourceMappingURL=charts.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/charts/charts.component.js.map

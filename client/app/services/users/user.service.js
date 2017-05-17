@@ -39,4 +39,4 @@ UserService = __decorate([
         http_1.Http])
 ], UserService);
 exports.UserService = UserService;
-//# sourceMappingURL=user.service.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/services/users/user.service.js.map

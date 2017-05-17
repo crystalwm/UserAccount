@@ -6,4 +6,4 @@ var User = (function () {
     return User;
 }());
 exports.User = User;
-//# sourceMappingURL=user.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/services/users/user.js.map

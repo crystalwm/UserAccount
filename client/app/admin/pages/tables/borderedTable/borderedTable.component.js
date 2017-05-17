@@ -42,4 +42,4 @@ BorderedTableComponent = __decorate([
     })
 ], BorderedTableComponent);
 exports.BorderedTableComponent = BorderedTableComponent;
-//# sourceMappingURL=borderedTable.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/tables/borderedTable/borderedTable.component.js.map

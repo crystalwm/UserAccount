@@ -20,4 +20,4 @@ ResponsiveTableComponent = __decorate([
     })
 ], ResponsiveTableComponent);
 exports.ResponsiveTableComponent = ResponsiveTableComponent;
-//# sourceMappingURL=responsiveTable.component.js.map
+//# sourceMappingURL=E:/Sonicwall/project/Sonicwall_demo/Sonicwall_demo/typescript-angular2-client/app/admin/pages/tables/responsiveTable/responsiveTable.component.js.map
